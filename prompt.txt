@@ -36,9 +36,9 @@ Use the technical stack specified in `website_specs.md` unless there is a strong
 - Resend-ready contact form architecture
 - Vercel deployment readiness
 
-Git and commit workflow:
+Git and commit workflow in the 'codex' branch:
 
-This repository will be stored on GitHub, so you must use Git professionally.
+This repository will be stored on GitHub, so you must use Git professionally in the 'codex' branch only.
 
 Create commits after each meaningful, working feature milestone. Do not create one huge final commit, and do not create a commit after every tiny file. Each commit should represent a stable feature group.
 
