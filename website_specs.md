@@ -157,7 +157,7 @@ Build the complete website using:
 - **Tailwind CSS**
 - **Framer Motion** for page/scroll/micro animations
 - **Three.js / React Three Fiber** for atmospheric 3D effects
-- **next-intl** or equivalent for bilingual routing and translations
+- **next-intl** or equivalent for bilingual routing and translations ( must be automatic and not the user selecting the language )
 - **shadcn/ui** for accessible base components where useful
 - **Resend** for the contact form email delivery
 - **Vercel Analytics** and optional Google Analytics support
