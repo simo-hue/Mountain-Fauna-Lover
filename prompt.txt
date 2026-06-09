@@ -1,0 +1,239 @@
+I want you to build a complete production-quality website project from the specification file `website_specs.md` in this GitHub repository.
+
+The repository is currently empty except for `website_specs.md`. You must initialize and implement the full project from scratch.
+
+Before writing code:
+1. Inspect the repository.
+2. Read the entire `website_specs.md`.
+3. Create a concise implementation plan.
+4. Then implement the project step by step.
+
+The goal is not to create a generic creator website. The goal is to create a cinematic, dark, modern, interactive alpine wildlife experience for the YouTube/social brand “Mountain Fauna Lover”.
+
+The website must feel premium, emotional, immersive, and visually surprising. It should combine:
+- cinematic dark alpine aesthetics,
+- black/white visual identity inspired by the provided logo,
+- fog/cloud logo portal intro,
+- wildlife observation / digiscoping lens experience,
+- professional motion and animation,
+- bilingual Italian/English support,
+- manually curated videos,
+- founder story,
+- digiscoping explanation,
+- collaboration/contact page,
+- gear section,
+- links/social page,
+- SEO, analytics-ready structure, privacy/cookie pages.
+
+Use the technical stack specified in `website_specs.md` unless there is a strong reason not to:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Three Fiber / Three.js where useful
+- next-intl or equivalent i18n solution
+- shadcn/ui if useful
+- Resend-ready contact form architecture
+- Vercel deployment readiness
+
+Git and commit workflow:
+
+This repository will be stored on GitHub, so you must use Git professionally.
+
+Create commits after each meaningful, working feature milestone. Do not create one huge final commit, and do not create a commit after every tiny file. Each commit should represent a stable feature group.
+
+Use clear conventional commit messages such as:
+- `chore: initialize nextjs project`
+- `feat: add cinematic design system and layout`
+- `feat: add bilingual routing and translations`
+- `feat: implement logo portal intro`
+- `feat: implement wildlife observation homepage`
+- `feat: add videos page and video modal`
+- `feat: add founder and digiscoping pages`
+- `feat: add collaboration contact flow`
+- `feat: add links privacy cookies and SEO`
+- `fix: resolve build and lint issues`
+- `docs: add setup and deployment notes`
+
+Before each commit:
+1. Ensure the current milestone is coherent.
+2. Run relevant checks when possible.
+3. Do not commit broken code knowingly.
+4. Do not commit secrets, API keys, `.env.local`, generated build folders, or unnecessary large files.
+5. Make sure `.gitignore` is correct.
+
+At the end, run:
+- formatter if configured,
+- linter,
+- TypeScript check,
+- production build.
+
+If any command fails, fix the problem before the final summary. If a check cannot be run because dependencies or environment are unavailable, explain clearly why.
+
+Important execution instructions:
+
+1. First inspect the existing repository structure.
+2. Then read `website_specs.md`.
+3. Then create a concise implementation plan before coding.
+4. Then implement the project step by step.
+5. Commit each meaningful milestone.
+6. After implementation, run formatting, linting, type checking, and build checks where possible.
+7. Fix all errors you find.
+8. Produce a final summary explaining:
+   - what was implemented,
+   - the commit history created,
+   - what files/folders were created,
+   - how to run locally,
+   - what environment variables are needed,
+   - what assets I need to replace,
+   - what is still placeholder/manual,
+   - how to deploy to Vercel.
+
+Quality bar:
+
+Do not stop at a basic implementation. Push the design and interaction quality as far as reasonably possible in this coding session. The final result should look like a premium cinematic website, not a standard template.
+
+Use placeholders only where required, but structure them professionally so I can easily replace them later. For example:
+- placeholder hero video,
+- placeholder alpine ambience audio,
+- placeholder founder image,
+- placeholder video thumbnails,
+- placeholder manually editable social stats,
+- placeholder gear data,
+- placeholder curated YouTube links.
+
+Design requirements:
+
+- Dark cinematic alpine visual language.
+- Mostly black, white, charcoal, fog gray, subtle icy highlights.
+- Thin geometric lines inspired by the logo.
+- Circular lens/crosshair interface elements.
+- Smooth scroll-based reveals.
+- Intro logo portal animation.
+- Wildlife Observation Mode after the portal intro.
+- Custom cursor behavior where appropriate.
+- Page-specific cursor themes where possible, for example lens/crosshair for wildlife/digiscoping, skis for ski-related areas, bike-inspired cursor for gear/adventure sections if implemented.
+- Professional animations, not childish effects.
+- Background fog/snow particles where appropriate.
+- Respect performance, but visual impact is more important than making the website ultra-minimal.
+
+Architecture requirements:
+
+- Use clean component structure.
+- Use reusable sections/components.
+- Use typed data files for videos, stats, gear, social links, navigation, and translations.
+- Use a clean app/page structure.
+- Keep copy bilingual and easy to edit.
+- Ensure responsive design for desktop, tablet, and mobile.
+- Implement accessibility basics: semantic HTML, keyboard navigation, contrast, reduced-motion support.
+- Implement SEO metadata and Open Graph metadata.
+- Add privacy and cookie pages.
+- Add analytics-ready support for Vercel Analytics and/or Google Analytics as specified.
+- Add contact form architecture prepared for Resend, with environment variables documented.
+- Add a professional `README.md` with local setup, environment variables, asset replacement instructions, and deployment notes.
+
+Important content:
+
+The brand is:
+Mountain Fauna Lover
+
+Founder:
+Mattioli Simone
+
+Founder bio direction:
+“I’m Mattioli Simone, a mountain and wildlife enthusiast from Trentino-Alto Adige, documenting alpine nature through digiscoping, skiing, e-bike adventures and cinematic videos.”
+
+Places to mention:
+- Trentino-Alto Adige
+- Val di Rabbi
+- Stelvio National Park
+
+Main CTA:
+- Subscribe on YouTube
+- Follow on Instagram
+
+Secondary:
+- Collaboration/contact
+
+Social links:
+- YouTube: https://www.youtube.com/@mountainfaunalover
+- TikTok: https://www.tiktok.com/@mountainfaunalover
+- Instagram: https://www.instagram.com/mountainfaunalover
+- LinkedIn founder link: https://www.linkedin.com/in/simonemattioli2003/
+
+Do not focus on GitHub or developer portfolio links unless the specification explicitly asks for them. The founder page may mention that Simone is also a software developer, but the website’s primary identity is mountain, wildlife, digiscoping, and alpine exploration.
+
+Suggested hero phrase:
+
+English:
+“Through my lens, a 360° journey into the wild heart of the Alps.”
+
+Italian:
+“Attraverso il mio obiettivo, un viaggio a 360° nel cuore selvaggio delle Alpi.”
+
+Use these unless the specification contains a better final version.
+
+Subagent / internal review instruction:
+
+If your Codex environment supports subagents or internal specialized passes, use them in a controlled way. Do not create unnecessary verbose subagent output. Use at most these internal roles:
+
+1. UI/UX Cinematic Design Reviewer:
+   Ensure the site does not look generic and matches the cinematic dark alpine Wildlife Observation Mode concept.
+
+2. Frontend Architecture Reviewer:
+   Ensure the Next.js/TypeScript/component structure is clean, maintainable, and scalable.
+
+3. QA/Performance/SEO Reviewer:
+   Ensure build works, responsive behavior is good, accessibility basics are respected, metadata exists, and placeholders are documented.
+
+If subagents are not available, simulate these as internal review passes before finalizing.
+
+Implementation priority order:
+
+1. Repository/Git initialization and `.gitignore`.
+2. Project setup and dependencies.
+3. Global theme, typography, Tailwind configuration, layout.
+4. i18n structure for Italian/English with automatic language detection where possible.
+5. Data files for videos, stats, gear, social links, navigation, and placeholders.
+6. Core reusable components:
+   - Logo portal intro
+   - Custom cursor
+   - Cinematic page shell
+   - Navigation
+   - Language handling
+   - Video card/modal
+   - Animated stats
+   - Contact form
+   - Section headings
+   - Fog/snow/particle effects
+7. Homepage:
+   - portal intro
+   - hero
+   - Wildlife Observation Mode
+   - best video preview
+   - founder preview
+   - digiscoping preview
+   - gear/adventure preview
+   - collaboration CTA
+8. Pages:
+   - `/founder`
+   - `/digiscoping`
+   - `/videos`
+   - `/collaboration`
+   - `/links`
+   - `/privacy`
+   - `/cookies`
+9. SEO and metadata.
+10. Analytics-ready integration.
+11. README and deployment docs.
+12. Final QA and build fixes.
+
+Be careful with assets:
+
+Use the asset paths and placeholder structure described in `website_specs.md`. Do not assume final assets exist. Create graceful fallbacks. The project should run even with placeholder assets.
+
+Expected final result:
+
+A complete working website that I can run locally and deploy to Vercel, with enough polish that it already feels like the first version of a real premium brand website.
+
+Start now by inspecting the repository and reading `website_specs.md`.
