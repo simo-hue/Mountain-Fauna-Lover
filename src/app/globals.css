@@ -90,6 +90,72 @@ a {
   mix-blend-mode: screen;
 }
 
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .has-custom-cursor body,
+  .has-custom-cursor a,
+  .has-custom-cursor button,
+  .has-custom-cursor [data-cursor] {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor {
+  transition: opacity 180ms ease;
+}
+
+.custom-cursor.cursor-hidden {
+  opacity: 0;
+}
+
+.fog-bank {
+  animation: fog-drift 18s ease-in-out infinite alternate;
+}
+
+.fog-bank-reverse {
+  animation: fog-drift-reverse 24s ease-in-out infinite alternate;
+}
+
+.snow-particle {
+  animation-name: snow-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.observation-lens {
+  background-color: rgba(190, 233, 255, 0.05);
+  filter: contrast(1.07) brightness(1.18) saturate(0.72);
+}
+
+@keyframes fog-drift {
+  from {
+    transform: translate3d(-8%, -4%, 0) scale(0.92);
+  }
+  to {
+    transform: translate3d(10%, 7%, 0) scale(1.12);
+  }
+}
+
+@keyframes fog-drift-reverse {
+  from {
+    transform: translate3d(12%, 4%, 0) scale(1.08);
+  }
+  to {
+    transform: translate3d(-9%, -7%, 0) scale(0.94);
+  }
+}
+
+@keyframes snow-fall {
+  0% {
+    transform: translate3d(0, -20vh, 0);
+  }
+  50% {
+    transform: translate3d(18px, 50vh, 0);
+  }
+  100% {
+    transform: translate3d(-12px, 115vh, 0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -23,6 +23,20 @@
     "cookies": "Cookie",
     "respect": "Il rispetto prima dello scatto"
   },
+  "cinematic": {
+    "portal": {
+      "label": "Introduzione cinematografica Mountain Fauna Lover",
+      "entering": "Entrando nel selvaggio",
+      "skip": "Salta intro"
+    },
+    "sound": {
+      "label": "Ambiente",
+      "on": "Attiva l'ambiente alpino",
+      "off": "Disattiva l'ambiente alpino",
+      "unavailable": "Aggiungi il file audio per attivare il suono",
+      "missing": "Audio in attesa"
+    }
+  },
   "metadata": {
     "home": {
       "title": "Mountain Fauna Lover — Fauna, Digiscoping e Storie Alpine",
@@ -92,7 +106,8 @@
       "eyebrow": "Dietro la lente",
       "title": "Mattioli Simone",
       "description": "Osservatore della montagna, appassionato di fauna e filmmaker del Trentino-Alto Adige, unisce la pazienza sul campo alla precisione della tecnologia.",
-      "cta": "Leggi la mia storia"
+      "cta": "Leggi la mia storia",
+      "placeholder": "Ritratto provvisorio"
     },
     "gear": {
       "eyebrow": "Sistemi da campo",

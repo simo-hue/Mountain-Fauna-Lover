@@ -7,3 +7,7 @@
 - [2026-06-11 22:09 CEST]: Bilingual Architecture and Cinematic Design Foundation
   - _Details_: Added automatic English/Italian locale routing, persistent language switching, shared navigation and footer, typed editable content configs, SEO metadata helpers, analytics hooks, and the core dark alpine design system.
   - _Tech Notes_: Added `next-intl` middleware and locale dictionaries, static locale generation, reusable UI primitives, the official supplied logo at its required optimized path, an animated SVG-inspired logo mark, and a generated replaceable alpine hero/OG placeholder. Locale routes are statically generated and verified in production.
+
+- [2026-06-11 22:22 CEST]: Wildlife Observation Homepage
+  - _Details_: Implemented the full cinematic homepage with a session-aware logo portal, alpine hero, interactive observation lens, fog and snow atmosphere, selected films, digiscoping, founder, gear, stats, and collaboration sections.
+  - _Tech Notes_: Added a desktop contextual cursor, touch-aware lens fallback, muted user-activated ambience control, lazy React Three Fiber mountain linework, scroll reveals, reduced-motion behavior, and locale-aware page transitions. Desktop and 390px mobile layouts, menu behavior, and English/Italian switching were browser-verified.

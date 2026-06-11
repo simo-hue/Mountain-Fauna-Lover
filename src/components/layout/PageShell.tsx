@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { CustomCursor } from "../cinematic/CustomCursor";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
@@ -12,6 +13,7 @@ export function PageShell({ children }: { children: ReactNode }) {
       >
         Skip to content
       </a>
+      <CustomCursor />
       <Navbar />
       <main id="main-content">{children}</main>
       <Footer />

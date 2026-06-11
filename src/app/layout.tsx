@@ -46,7 +46,11 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale} className={`${geist.variable} ${cormorant.variable}`}>
+    <html
+      lang={locale}
+      data-scroll-behavior="smooth"
+      className={`${geist.variable} ${cormorant.variable}`}
+    >
       <body>
         {children}
         <Analytics />

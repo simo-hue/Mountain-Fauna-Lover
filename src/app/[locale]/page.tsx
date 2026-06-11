@@ -1,8 +1,16 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
-import { BrandMark } from "@/components/ui/BrandMark";
-import { createPageMetadata } from "@/lib/metadata";
+import { LogoPortalIntro } from "@/components/cinematic/LogoPortalIntro";
+import { CollaborationPreview } from "@/components/sections/CollaborationPreview";
+import { DigiscopingPreview } from "@/components/sections/DigiscopingPreview";
+import { FeaturedVideosPreview } from "@/components/sections/FeaturedVideosPreview";
+import { FounderPreview } from "@/components/sections/FounderPreview";
+import { GearPreview } from "@/components/sections/GearPreview";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { IdentityStatement } from "@/components/sections/IdentityStatement";
+import { StatsSection } from "@/components/sections/StatsSection";
 import type { AppLocale } from "@/i18n/routing";
+import { createPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -26,22 +34,18 @@ export default async function Home({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("home");
 
   return (
-    <section className="relative grid min-h-dvh place-items-center overflow-hidden px-6 text-center">
-      <div className="absolute inset-0 bg-[url('/images/backgrounds/alpine-night.jpg')] bg-cover bg-center opacity-45" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-[#030303]" />
-      <div className="relative z-10 max-w-4xl">
-        <BrandMark className="mx-auto mb-8 size-24 text-white/80" />
-        <p className="eyebrow mb-5">{t("mode")}</p>
-        <h1 className="text-5xl leading-[0.95] font-light tracking-[-0.055em] text-balance sm:text-7xl lg:text-8xl">
-          {t("hero.title")}
-        </h1>
-        <p className="mx-auto mt-7 max-w-2xl text-sm leading-7 text-white/55 sm:text-base">
-          {t("hero.description")}
-        </p>
-      </div>
-    </section>
+    <>
+      <LogoPortalIntro />
+      <HeroSection />
+      <IdentityStatement />
+      <FeaturedVideosPreview />
+      <DigiscopingPreview />
+      <FounderPreview />
+      <GearPreview />
+      <StatsSection />
+      <CollaborationPreview />
+    </>
   );
 }

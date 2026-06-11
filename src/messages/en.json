@@ -23,6 +23,20 @@
     "cookies": "Cookies",
     "respect": "Respect before the shot"
   },
+  "cinematic": {
+    "portal": {
+      "label": "Mountain Fauna Lover cinematic introduction",
+      "entering": "Entering the wild",
+      "skip": "Skip intro"
+    },
+    "sound": {
+      "label": "Ambience",
+      "on": "Enable alpine ambience",
+      "off": "Disable alpine ambience",
+      "unavailable": "Add the ambience audio asset to enable sound",
+      "missing": "Audio pending"
+    }
+  },
   "metadata": {
     "home": {
       "title": "Mountain Fauna Lover — Wildlife, Digiscoping and Alpine Stories",
@@ -92,7 +106,8 @@
       "eyebrow": "Behind the lens",
       "title": "Mattioli Simone",
       "description": "Mountain observer, wildlife enthusiast and filmmaker from Trentino-Alto Adige, combining patience in the field with precision in technology.",
-      "cta": "Read my story"
+      "cta": "Read my story",
+      "placeholder": "Portrait placeholder"
     },
     "gear": {
       "eyebrow": "Field systems",
