@@ -94,7 +94,7 @@ export function LogoPortalIntro() {
               className="absolute inset-0"
             >
               <Image
-                src="/logo/mountain-fauna-logo.png"
+                src="/logo/mountain-fauna-logo-v2.png"
                 alt="Mountain Fauna Lover"
                 fill
                 priority

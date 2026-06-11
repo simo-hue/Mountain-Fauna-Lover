@@ -11,3 +11,13 @@ Before production launch:
 7. Replace `public/audio/alpine-ambience.mp3` with a final licensed or original alpine ambience recording if desired.
 8. Replace the lightweight generated `public/videos/hero-fog.mp4` and `public/videos/alpine-background.mp4` placeholders with final compressed footage if available.
 9. Replace the generated hero/OG imagery with final commissioned assets if available.
+
+---
+
+- [ ] Generare un logo di più qualità;
+- [ ] Inserire i Video che voglio salvare;
+- [ ] Tengo audio nel footer;
+- [ ] ;
+- [ ] ;
+- [ ] ;
+- [ ] ;

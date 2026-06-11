@@ -46,3 +46,6 @@
 - [2026-06-11 23:06 CEST]: Replace SVG logo with PNG
   - _Details_: Replaced the inline SVG logo with the PNG logo in the `BrandMark` component.
   - _Tech Notes_: Removed `public/logo/mountain-fauna-logo.svg` and updated `src/components/ui/BrandMark.tsx` to use `next/image` pointing to `mountain-fauna-logo.png`.
+- [2026-06-11 23:32 CEST]: Cache Busted Logo Image
+  - _Details_: Renamed the PNG logo file to bypass Next.js and browser caching which was causing the old logo version to display.
+  - _Tech Notes_: Renamed `public/logo/mountain-fauna-logo.png` to `public/logo/mountain-fauna-logo-v2.png` and updated all Next.js Image component references in the source code to use the new filename.
