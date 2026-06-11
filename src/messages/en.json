@@ -259,6 +259,86 @@
       "cta": "Watch the field stories"
     }
   },
+  "collaboration": {
+    "eyebrow": "Selected partnerships",
+    "title": "Build something true to the mountain.",
+    "description": "Mountain Fauna Lover is available for selected collaborations with brands, tourism boards, outdoor projects and creators who share a respect for the mountains, wildlife and authentic storytelling.",
+    "typesEyebrow": "Ways to work together",
+    "typesTitle": "One landscape. Many honest stories.",
+    "types": {
+      "outdoorBrand": {
+        "title": "Outdoor and mountain brands",
+        "description": "Field-led product stories grounded in real alpine use, not staged claims."
+      },
+      "tourism": {
+        "title": "Tourism boards and territories",
+        "description": "Quiet destination narratives that reveal place, season and local identity."
+      },
+      "wildlife": {
+        "title": "Wildlife and nature projects",
+        "description": "Respectful observation and educational stories built around distance and care."
+      },
+      "gear": {
+        "title": "Gear and technical equipment",
+        "description": "Cinematic demonstrations and honest field context for specialist equipment."
+      },
+      "alpineExperience": {
+        "title": "Ski, e-bike and alpine experiences",
+        "description": "Movement-focused stories across snow, trails and high mountain terrain."
+      },
+      "cinematicContent": {
+        "title": "Cinematic social content",
+        "description": "Short and long-form films shaped for social channels without losing atmosphere."
+      }
+    },
+    "contact": {
+      "eyebrow": "Start with context",
+      "title": "Tell me where the story begins.",
+      "description": "Share the project, place, timing and goal. Selected requests receive a direct, considered response."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@organization.com",
+      "organization": "Organization / brand",
+      "organizationPlaceholder": "Optional",
+      "type": "Collaboration type",
+      "typePlaceholder": "Select a direction",
+      "message": "Project message",
+      "messagePlaceholder": "Tell me about the project, timing, place and the story you want to create.",
+      "website": "Website",
+      "privacyPrefix": "I have read the",
+      "privacyLink": "privacy policy",
+      "submit": "Send field note",
+      "sending": "Sending",
+      "responseTime": "No automated sales flow. Each request is read directly.",
+      "types": {
+        "outdoorBrand": "Outdoor and mountain brand",
+        "tourism": "Tourism board or territory",
+        "wildlife": "Wildlife or nature project",
+        "gear": "Gear or technical equipment",
+        "alpineExperience": "Ski, e-bike or alpine experience",
+        "cinematicContent": "Cinematic social content"
+      },
+      "validation": {
+        "nameRequired": "Enter at least two characters.",
+        "nameTooLong": "Name is too long.",
+        "emailInvalid": "Enter a valid email address.",
+        "emailTooLong": "Email address is too long.",
+        "organizationTooLong": "Organization name is too long.",
+        "messageShort": "Add at least 20 characters so the project has enough context.",
+        "messageTooLong": "Keep the message under 3,000 characters.",
+        "privacyRequired": "Accept the privacy policy to continue.",
+        "spamDetected": "Submission could not be verified."
+      },
+      "status": {
+        "success": "Field note received. Thank you — I will review the project directly.",
+        "error": "The message could not be delivered. Please use the direct email beside the form.",
+        "notConfigured": "Email delivery is not configured yet. Please use the direct email beside the form."
+      }
+    }
+  },
   "links": {
     "eyebrow": "Mountain signal",
     "title": "Follow the next observation.",

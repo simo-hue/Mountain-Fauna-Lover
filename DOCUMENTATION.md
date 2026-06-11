@@ -19,3 +19,7 @@
 - [2026-06-11 22:34 CEST]: Founder, Digiscoping, Gear, Links, and Legal Pages
   - _Details_: Added the complete bilingual founder story, educational digiscoping experience, editable gear archive, premium social link hub, privacy policy, and cookie policy.
   - _Tech Notes_: Added per-page SEO metadata, a scroll-responsive scope study, founder portrait and fog-background placeholders, category-specific cursor treatments, LinkedIn-first founder actions, legal data/analytics disclosures, and locale-aware accessibility labels. The production build statically generates all English and Italian routes.
+
+- [2026-06-11 22:43 CEST]: Collaboration Contact Flow
+  - _Details_: Added the collaboration positioning page, six partnership categories, validated bilingual contact form, direct email fallback, and server-side Resend delivery architecture.
+  - _Tech Notes_: Added shared Zod validation, React Hook Form states, privacy consent, honeypot spam handling, keyboard-accessible errors, server-only environment variables, and `.env.example`. API tests verify 422 validation responses, 503 unconfigured delivery behavior, and silent honeypot success; browser tests verify localized validation and fallback messaging.

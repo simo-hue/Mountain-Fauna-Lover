@@ -259,6 +259,86 @@
       "cta": "Guarda le storie dal campo"
     }
   },
+  "collaboration": {
+    "eyebrow": "Partnership selezionate",
+    "title": "Costruiamo qualcosa di autentico per la montagna.",
+    "description": "Mountain Fauna Lover è disponibile per collaborazioni selezionate con brand, enti turistici, progetti outdoor e creator che condividono il rispetto per la montagna, la fauna e il racconto autentico.",
+    "typesEyebrow": "Modi per lavorare insieme",
+    "typesTitle": "Un paesaggio. Molte storie sincere.",
+    "types": {
+      "outdoorBrand": {
+        "title": "Brand outdoor e montagna",
+        "description": "Storie di prodotto nate sul campo e legate a un uso alpino reale, senza promesse costruite."
+      },
+      "tourism": {
+        "title": "Enti turistici e territori",
+        "description": "Racconti quieti delle destinazioni che rivelano luogo, stagione e identità locale."
+      },
+      "wildlife": {
+        "title": "Progetti fauna e natura",
+        "description": "Osservazione rispettosa e storie educative costruite su distanza e attenzione."
+      },
+      "gear": {
+        "title": "Attrezzatura tecnica",
+        "description": "Dimostrazioni cinematografiche e contesto reale sul campo per strumenti specialistici."
+      },
+      "alpineExperience": {
+        "title": "Esperienze sci, e-bike e alpine",
+        "description": "Storie di movimento tra neve, sentieri e territorio d'alta montagna."
+      },
+      "cinematicContent": {
+        "title": "Contenuti social cinematografici",
+        "description": "Film brevi e lunghi pensati per i canali social senza perdere atmosfera."
+      }
+    },
+    "contact": {
+      "eyebrow": "Partiamo dal contesto",
+      "title": "Raccontami dove inizia la storia.",
+      "description": "Condividi progetto, luogo, tempistiche e obiettivo. Le richieste selezionate ricevono una risposta diretta e ragionata."
+    },
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Il tuo nome",
+      "email": "Email",
+      "emailPlaceholder": "tu@organizzazione.com",
+      "organization": "Organizzazione / brand",
+      "organizationPlaceholder": "Facoltativo",
+      "type": "Tipo di collaborazione",
+      "typePlaceholder": "Seleziona una direzione",
+      "message": "Messaggio sul progetto",
+      "messagePlaceholder": "Raccontami progetto, tempistiche, luogo e la storia che vuoi creare.",
+      "website": "Sito web",
+      "privacyPrefix": "Ho letto l'",
+      "privacyLink": "informativa privacy",
+      "submit": "Invia nota dal campo",
+      "sending": "Invio",
+      "responseTime": "Nessun flusso commerciale automatico. Ogni richiesta viene letta direttamente.",
+      "types": {
+        "outdoorBrand": "Brand outdoor e montagna",
+        "tourism": "Ente turistico o territorio",
+        "wildlife": "Progetto fauna o natura",
+        "gear": "Attrezzatura tecnica",
+        "alpineExperience": "Esperienza sci, e-bike o alpina",
+        "cinematicContent": "Contenuto social cinematografico"
+      },
+      "validation": {
+        "nameRequired": "Inserisci almeno due caratteri.",
+        "nameTooLong": "Il nome è troppo lungo.",
+        "emailInvalid": "Inserisci un indirizzo email valido.",
+        "emailTooLong": "L'indirizzo email è troppo lungo.",
+        "organizationTooLong": "Il nome dell'organizzazione è troppo lungo.",
+        "messageShort": "Aggiungi almeno 20 caratteri per dare contesto al progetto.",
+        "messageTooLong": "Mantieni il messaggio sotto i 3.000 caratteri.",
+        "privacyRequired": "Accetta l'informativa privacy per continuare.",
+        "spamDetected": "Non è stato possibile verificare l'invio."
+      },
+      "status": {
+        "success": "Nota ricevuta. Grazie — valuterò direttamente il progetto.",
+        "error": "Il messaggio non è stato consegnato. Usa l'email diretta accanto al modulo.",
+        "notConfigured": "L'invio email non è ancora configurato. Usa l'email diretta accanto al modulo."
+      }
+    }
+  },
   "links": {
     "eyebrow": "Segnale dalla montagna",
     "title": "Segui la prossima osservazione.",
