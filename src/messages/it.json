@@ -110,7 +110,8 @@
       "title": "Mattioli Simone",
       "description": "Osservatore della montagna, appassionato di fauna e filmmaker del Trentino-Alto Adige, unisce la pazienza sul campo alla precisione della tecnologia.",
       "cta": "Leggi la mia storia",
-      "placeholder": "Ritratto provvisorio"
+      "placeholder": "Ritratto del fondatore",
+      "portraitAlt": "Ritratto di Mattioli Simone"
     },
     "gear": {
       "eyebrow": "Sistemi da campo",
@@ -196,8 +197,7 @@
     "eyebrow": "Profilo del fondatore",
     "title": "Una vita modellata dall'osservazione.",
     "description": "Sono Mattioli Simone, un appassionato di montagna e fauna selvatica del Trentino-Alto Adige. Documento la natura alpina attraverso digiscoping, sci, avventure in e-bike e video cinematografici.",
-    "portraitAlt": "Ritratto provvisorio del fondatore Mattioli Simone",
-    "portraitNote": "Sostituisci questo segnaposto grafico con il ritratto definitivo in /public/images/founder/founder.jpg.",
+    "portraitAlt": "Ritratto del fondatore Mattioli Simone",
     "story": {
       "eyebrow": "Note di campo in prima persona",
       "title": "La montagna mi ha insegnato ad aspettare.",

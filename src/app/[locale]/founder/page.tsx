@@ -52,7 +52,7 @@ export default async function FounderPage({
           <div className="relative lg:sticky lg:top-28">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/12 bg-[#080808]">
               <Image
-                src="/images/founder/founder.jpg"
+                src="/images/founder/founder.jpeg"
                 alt={t("portraitAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 42vw"
@@ -71,9 +71,6 @@ export default async function FounderPage({
                 </span>
               </div>
             </div>
-            <p className="mt-4 text-xs leading-5 text-white/30">
-              {t("portraitNote")}
-            </p>
           </div>
 
           <div className="lg:pt-10 lg:pl-12">

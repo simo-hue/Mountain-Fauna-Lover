@@ -110,7 +110,8 @@
       "title": "Mattioli Simone",
       "description": "Mountain observer, wildlife enthusiast and filmmaker from Trentino-Alto Adige, combining patience in the field with precision in technology.",
       "cta": "Read my story",
-      "placeholder": "Portrait placeholder"
+      "placeholder": "Founder portrait",
+      "portraitAlt": "Portrait of Mattioli Simone"
     },
     "gear": {
       "eyebrow": "Field systems",
@@ -196,8 +197,7 @@
     "eyebrow": "Founder field profile",
     "title": "A life shaped by looking closer.",
     "description": "I’m Mattioli Simone, a mountain and wildlife enthusiast from Trentino-Alto Adige, documenting alpine nature through digiscoping, skiing, e-bike adventures and cinematic videos.",
-    "portraitAlt": "Founder portrait placeholder for Mattioli Simone",
-    "portraitNote": "Replace this designed placeholder with the final founder portrait at /public/images/founder/founder.jpg.",
+    "portraitAlt": "Portrait of founder Mattioli Simone",
     "story": {
       "eyebrow": "First-person field notes",
       "title": "The mountain taught me to wait.",

@@ -21,16 +21,14 @@ export function FounderPreview() {
           className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b0b0b]"
         >
           <Image
-            src="/images/backgrounds/alpine-night.jpg"
-            alt=""
+            src="/images/founder/founder.jpeg"
+            alt={t("portraitAlt")}
             fill
             sizes="(max-width: 1024px) 100vw, 45vw"
-            className="object-cover opacity-45 grayscale"
+            className="object-cover object-center grayscale transition duration-1000 hover:scale-[1.03]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-          <div className="absolute inset-8 grid place-items-center rounded-full border border-white/12">
-            <span className="font-serif text-8xl text-white/16 italic">MS</span>
-          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/10" />
+          <div className="absolute inset-8 rounded-full border border-white/12" />
           <div className="absolute right-7 bottom-7 left-7 flex justify-between border-t border-white/15 pt-4 font-mono text-[0.55rem] tracking-[0.14em] text-white/35 uppercase">
             <span>{t("placeholder")}</span>
             <span>Trentino-Alto Adige</span>

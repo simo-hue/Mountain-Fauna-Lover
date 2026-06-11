@@ -23,3 +23,7 @@
 - [2026-06-11 22:43 CEST]: Collaboration Contact Flow
   - _Details_: Added the collaboration positioning page, six partnership categories, validated bilingual contact form, direct email fallback, and server-side Resend delivery architecture.
   - _Tech Notes_: Added shared Zod validation, React Hook Form states, privacy consent, honeypot spam handling, keyboard-accessible errors, server-only environment variables, and `.env.example`. API tests verify 422 validation responses, 503 unconfigured delivery behavior, and silent honeypot success; browser tests verify localized validation and fallback messaging.
+
+- [2026-06-11 22:45 CEST]: Supplied Founder Portrait
+  - _Details_: Replaced the designed founder placeholder with the supplied Mattioli Simone portrait across the homepage and founder page.
+  - _Tech Notes_: Preserved the uploaded `founder.jpeg` asset path, updated localized alt text, and removed placeholder-only presentation copy.
