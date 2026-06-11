@@ -408,6 +408,14 @@
     "description": "Un riepilogo conciso delle preferenze e degli strumenti di misurazione che questa esperienza può memorizzare.",
     "record": "Registro preferenze",
     "updated": "Ultimo aggiornamento · 11 giugno 2026",
+    "banner": {
+      "label": "Preferenza analytics",
+      "title": "Una scelta chiara sugli analytics.",
+      "description": "Google Analytics facoltativo resta disattivato finché non lo autorizzi. Le preferenze essenziali di lingua e sessione continuano a funzionare.",
+      "link": "Dettagli cookie",
+      "essential": "Solo essenziali",
+      "allow": "Consenti analytics"
+    },
     "sections": {
       "essential": {
         "title": "Funzionamento essenziale",
@@ -419,7 +427,7 @@
       },
       "analytics": {
         "title": "Cookie analytics",
-        "body": "Vercel Analytics è attivo per misurazioni aggregate attente alla privacy. Google Analytics è facoltativo e viene caricato solo quando NEXT_PUBLIC_GA_ID è configurato; può quindi usare i propri cookie di misurazione."
+        "body": "Vercel Analytics è attivo per misurazioni aggregate attente alla privacy. Google Analytics è facoltativo e viene caricato solo quando NEXT_PUBLIC_GA_ID è configurato e il visitatore autorizza gli analytics; può quindi usare i propri cookie di misurazione."
       },
       "sound": {
         "title": "Preferenza audio",

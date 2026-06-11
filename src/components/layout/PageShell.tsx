@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
 import { CustomCursor } from "../cinematic/CustomCursor";
+import { CookieConsent } from "./CookieConsent";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
@@ -20,6 +21,7 @@ export function PageShell({ children }: { children: ReactNode }) {
       <Navbar />
       <main id="main-content">{children}</main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 }

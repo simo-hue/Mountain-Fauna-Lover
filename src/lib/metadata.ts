@@ -19,7 +19,9 @@ export function createPageMetadata({
   const canonical = `${siteConfig.siteUrl}/${locale}${path}`;
 
   return {
-    title,
+    title: {
+      absolute: title,
+    },
     description,
     alternates: {
       canonical,

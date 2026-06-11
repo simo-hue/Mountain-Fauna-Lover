@@ -408,6 +408,14 @@
     "description": "A concise record of the preferences and measurement tools this experience may store.",
     "record": "Preference record",
     "updated": "Last updated · June 11, 2026",
+    "banner": {
+      "label": "Analytics preference",
+      "title": "A quiet choice about analytics.",
+      "description": "Optional Google Analytics stays off unless you allow it. Essential language and session preferences still work.",
+      "link": "Cookie details",
+      "essential": "Essential only",
+      "allow": "Allow analytics"
+    },
     "sections": {
       "essential": {
         "title": "Essential operation",
@@ -419,7 +427,7 @@
       },
       "analytics": {
         "title": "Analytics cookies",
-        "body": "Vercel Analytics is enabled for privacy-conscious aggregate measurement. Google Analytics is optional and loads only when NEXT_PUBLIC_GA_ID is configured; it may then use its own measurement cookies."
+        "body": "Vercel Analytics is enabled for privacy-conscious aggregate measurement. Google Analytics is optional and loads only when NEXT_PUBLIC_GA_ID is configured and the visitor allows analytics; it may then use its own measurement cookies."
       },
       "sound": {
         "title": "Sound preference",

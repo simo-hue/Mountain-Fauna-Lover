@@ -28,6 +28,21 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
+  keywords: [
+    "Mountain Fauna Lover",
+    "digiscoping",
+    "wildlife observation",
+    "Trentino-Alto Adige",
+    "Val di Rabbi",
+    "Stelvio National Park",
+    "alpine wildlife",
+  ],
+  authors: [{ name: siteConfig.founder }],
+  creator: siteConfig.founder,
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/favicon.ico",
   },

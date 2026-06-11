@@ -9,6 +9,7 @@ import { GearPreview } from "@/components/sections/GearPreview";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { IdentityStatement } from "@/components/sections/IdentityStatement";
 import { StatsSection } from "@/components/sections/StatsSection";
+import { StructuredData } from "@/components/seo/StructuredData";
 import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
 
@@ -37,6 +38,7 @@ export default async function Home({
 
   return (
     <>
+      <StructuredData />
       <LogoPortalIntro />
       <HeroSection />
       <IdentityStatement />

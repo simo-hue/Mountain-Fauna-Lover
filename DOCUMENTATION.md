@@ -27,3 +27,7 @@
 - [2026-06-11 22:45 CEST]: Supplied Founder Portrait
   - _Details_: Replaced the designed founder placeholder with the supplied Mattioli Simone portrait across the homepage and founder page.
   - _Tech Notes_: Preserved the uploaded `founder.jpeg` asset path, updated localized alt text, and removed placeholder-only presentation copy.
+
+- [2026-06-11 22:49 CEST]: SEO, Consent, and Deployment Documentation
+  - _Details_: Completed the search/discovery layer, analytics consent behavior, owner handoff, asset guide, environment reference, and Vercel deployment documentation.
+  - _Tech Notes_: Added JSON-LD for WebSite, Brand/Organization, and Person; sitemap, robots, web app manifest, canonical locale alternates, consent-gated optional Google Analytics, retained Vercel Analytics, tracked optional asset directories, and documented every editable data source and placeholder.
