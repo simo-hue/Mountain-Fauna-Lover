@@ -131,6 +131,19 @@
     }
   },
   "videos": {
+    "page": {
+      "eyebrow": "Film alpini selezionati",
+      "title": "Note di campo in movimento.",
+      "description": "Nove osservazioni selezionate tra fauna, digiscoping, sci ed esplorazione alpina. Ogni film inizia con distanza, pazienza e attenzione.",
+      "archive": "Archivio osservazioni",
+      "manual": "Selezione manuale · 09 elementi"
+    },
+    "actions": {
+      "open": "Apri film",
+      "close": "Chiudi film",
+      "youtube": "Guarda su YouTube"
+    },
+    "placeholder": "Questo spazio è pronto per un ID YouTube selezionato. Nel frattempo, continua direttamente sul canale Mountain Fauna Lover.",
     "categories": {
       "wildlife": "Fauna",
       "digiscoping": "Digiscoping",

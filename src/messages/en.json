@@ -131,6 +131,19 @@
     }
   },
   "videos": {
+    "page": {
+      "eyebrow": "Curated alpine films",
+      "title": "Field notes in motion.",
+      "description": "Nine selected observations across wildlife, digiscoping, skiing and alpine exploration. Every film begins with distance, patience and attention.",
+      "archive": "Observation archive",
+      "manual": "Manually curated · 09 entries"
+    },
+    "actions": {
+      "open": "Open film",
+      "close": "Close film",
+      "youtube": "Watch on YouTube"
+    },
+    "placeholder": "This film slot is ready for a curated YouTube ID. Until then, continue directly to the Mountain Fauna Lover channel.",
     "categories": {
       "wildlife": "Wildlife",
       "digiscoping": "Digiscoping",

@@ -11,3 +11,7 @@
 - [2026-06-11 22:22 CEST]: Wildlife Observation Homepage
   - _Details_: Implemented the full cinematic homepage with a session-aware logo portal, alpine hero, interactive observation lens, fog and snow atmosphere, selected films, digiscoping, founder, gear, stats, and collaboration sections.
   - _Tech Notes_: Added a desktop contextual cursor, touch-aware lens fallback, muted user-activated ambience control, lazy React Three Fiber mountain linework, scroll reveals, reduced-motion behavior, and locale-aware page transitions. Desktop and 390px mobile layouts, menu behavior, and English/Italian switching were browser-verified.
+
+- [2026-06-11 22:27 CEST]: Curated Videos and Modal Playback
+  - _Details_: Added the bilingual videos archive with nine manually editable cinematic cards and an accessible modal viewing experience.
+  - _Tech Notes_: YouTube embeds load only when a real `youtubeId` is configured and the modal opens. Placeholder entries present a branded fallback with a direct YouTube action. Escape closing, initial close-button focus, scroll locking, backdrop dismissal, and responsive rendering were verified in the browser.
