@@ -35,3 +35,7 @@
 - [2026-06-11 22:50 CEST]: Alpine Media Placeholders
   - _Details_: Added lightweight cinematic video and ambience placeholders at every media path required by the specification and integrated them with still-image and reduced-motion fallbacks.
   - _Tech Notes_: Desktop hero and portal video use muted inline MP4 playback; mobile and reduced-motion users retain static imagery. The ambience remains user-controlled and stores its preference locally.
+
+- [2026-06-11 22:57 CEST]: Dependency Resolution and Build Fix
+  - _Details_: Resolved a Next.js version incompatibility caused by a forceful npm audit resolution and successfully restored the production build.
+  - _Tech Notes_: Upgraded `next` package to the latest supported version compatible with React 19 and the existing configuration (`next.config.ts`), and successfully ran `npm run build`.
