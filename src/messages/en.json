@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "label": "Primary navigation",
+    "founder": "Founder",
+    "digiscoping": "Digiscoping",
+    "videos": "Videos",
+    "gear": "Gear",
+    "collaboration": "Collaboration",
+    "links": "Links",
+    "youtube": "YouTube",
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "footer": {
+    "statement": "A quiet, cinematic record of wildlife, mountain light and exploration in the Italian Alps.",
+    "observe": "Observe",
+    "information": "Information",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "linkedin": "LinkedIn",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "respect": "Respect before the shot"
+  },
+  "metadata": {
+    "home": {
+      "title": "Mountain Fauna Lover — Wildlife, Digiscoping and Alpine Stories",
+      "description": "Through my lens, a 360° journey into the wild heart of the Alps. Wildlife observation, digiscoping, skiing and mountain exploration from Trentino-Alto Adige."
+    },
+    "founder": {
+      "title": "Founder — Mattioli Simone",
+      "description": "Meet Mattioli Simone, the mountain and wildlife enthusiast behind Mountain Fauna Lover."
+    },
+    "digiscoping": {
+      "title": "Digiscoping — Respect at a Distance",
+      "description": "Discover digiscoping as a patient, respectful way to observe and document alpine wildlife from afar."
+    },
+    "videos": {
+      "title": "Alpine Films",
+      "description": "A curated collection of cinematic wildlife, digiscoping, skiing and exploration videos from the Alps."
+    },
+    "gear": {
+      "title": "Field Gear",
+      "description": "The observation, camera, mountain and editing tools behind Mountain Fauna Lover."
+    },
+    "collaboration": {
+      "title": "Collaborate",
+      "description": "Collaborate with Mountain Fauna Lover on authentic outdoor, wildlife, tourism and cinematic mountain stories."
+    },
+    "links": {
+      "title": "Follow the Mountain",
+      "description": "Find Mountain Fauna Lover on YouTube, Instagram and TikTok, or connect with founder Mattioli Simone."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How Mountain Fauna Lover handles contact form data, analytics and your privacy rights."
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "How Mountain Fauna Lover uses language preferences, analytics and optional sound preferences."
+    }
+  },
+  "home": {
+    "mode": "Wildlife Observation Mode",
+    "hero": {
+      "title": "Through my lens, a 360° journey into the wild heart of the Alps.",
+      "description": "Wildlife observation, digiscoping, skiing and mountain exploration from Trentino-Alto Adige, Val di Rabbi and Stelvio National Park.",
+      "youtube": "Subscribe on YouTube",
+      "instagram": "Follow on Instagram",
+      "scroll": "Enter observation mode"
+    },
+    "identity": {
+      "eyebrow": "A field journal in motion",
+      "title": "Silence makes the wild visible.",
+      "description": "Mountain Fauna Lover documents the pauses between movement: a distant silhouette, snow crossing a ridge, a breath held behind the lens.",
+      "quote": "The animal stays in its world. I stay in mine. The lens becomes the bridge."
+    },
+    "videos": {
+      "eyebrow": "Selected observations",
+      "title": "Stories found by waiting.",
+      "description": "Cinematic moments from the alpine field, curated by hand.",
+      "cta": "Explore all films"
+    },
+    "digiscoping": {
+      "eyebrow": "Distance is respect",
+      "title": "A lens between two worlds.",
+      "description": "Digiscoping turns patient observation into images without asking wildlife to surrender its space.",
+      "cta": "Enter the scope"
+    },
+    "founder": {
+      "eyebrow": "Behind the lens",
+      "title": "Mattioli Simone",
+      "description": "Mountain observer, wildlife enthusiast and filmmaker from Trentino-Alto Adige, combining patience in the field with precision in technology.",
+      "cta": "Read my story"
+    },
+    "gear": {
+      "eyebrow": "Field systems",
+      "title": "Tools for the long wait.",
+      "description": "Observation optics, camera systems, snow equipment and editing tools chosen to move lightly through the mountain.",
+      "cta": "Open the field kit"
+    },
+    "stats": {
+      "eyebrow": "Field notes",
+      "title": "A growing alpine archive.",
+      "youtubeSubscribers": "YouTube subscribers",
+      "instagramFollowers": "Instagram followers",
+      "featuredVideos": "Featured films",
+      "alpineStories": "Alpine vision"
+    },
+    "collaboration": {
+      "eyebrow": "Work in the wild",
+      "title": "Create a story worth carrying home.",
+      "description": "Selected collaborations with brands, territories and creators who value the mountain, wildlife and honest cinematic work.",
+      "cta": "Start a collaboration"
+    }
+  },
+  "videos": {
+    "categories": {
+      "wildlife": "Wildlife",
+      "digiscoping": "Digiscoping",
+      "ski": "Ski",
+      "exploration": "Exploration"
+    },
+    "items": {
+      "video01": {
+        "title": "The Quiet Before the Deer",
+        "description": "A patient wildlife observation at the edge of the alpine forest."
+      },
+      "video02": {
+        "title": "Through the Spotting Scope",
+        "description": "A distant encounter translated through glass, air and mountain light."
+      },
+      "video03": {
+        "title": "Val di Rabbi, Before Dawn",
+        "description": "Following the valley as fog lifts from the first ridge."
+      },
+      "video04": {
+        "title": "Lines Across Winter",
+        "description": "A quiet descent through the geometry of alpine snow."
+      },
+      "video05": {
+        "title": "A Silhouette in the Mist",
+        "description": "Wildlife appears for only a moment, then returns to the mountain."
+      },
+      "video06": {
+        "title": "Respect at 60×",
+        "description": "Why distance is the most important part of the image."
+      },
+      "video07": {
+        "title": "Stelvio Field Notes",
+        "description": "Wind, rock and the long roads into Stelvio National Park."
+      },
+      "video08": {
+        "title": "Cold Air, First Track",
+        "description": "An alpine morning measured in breath, edges and light."
+      },
+      "video09": {
+        "title": "The Mountain Keeps Watch",
+        "description": "A final observation from the border between forest and sky."
+      }
+    }
+  },
+  "gear": {
+    "items": {
+      "spottingScope": {
+        "name": "Digiscoping Setup",
+        "description": "Spotting scope, phone or camera adapter, and careful manual control. Replace with the exact field setup."
+      },
+      "cameraKit": {
+        "name": "Camera & Video Setup",
+        "description": "A compact cinematic camera system prepared for changing alpine light. Replace with exact models."
+      },
+      "tripod": {
+        "name": "Tripod & Support",
+        "description": "Stable support for long observation and precise movement in uneven terrain."
+      },
+      "skiKit": {
+        "name": "Ski & Mountain Equipment",
+        "description": "Technical winter equipment selected for safety, mobility and long days outside."
+      },
+      "ebikeKit": {
+        "name": "E-bike & Offroad Equipment",
+        "description": "Exploration tools for reaching distant trailheads responsibly."
+      },
+      "editingSuite": {
+        "name": "Editing & Software",
+        "description": "The digital darkroom where field recordings become cinematic alpine stories."
+      }
+    }
+  }
+}
