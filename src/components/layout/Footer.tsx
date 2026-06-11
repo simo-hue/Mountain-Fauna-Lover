@@ -6,7 +6,6 @@ import { socials } from "@/config/socials";
 import { Link } from "@/i18n/navigation";
 
 import { BrandMark } from "../ui/BrandMark";
-import { LocaleSwitcher } from "./LocaleSwitcher";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -66,7 +65,6 @@ export function Footer() {
             >
               {t("cookies")}
             </Link>
-            <LocaleSwitcher />
           </div>
         </div>
       </div>

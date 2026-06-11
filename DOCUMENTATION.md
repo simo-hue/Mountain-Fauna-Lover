@@ -39,3 +39,7 @@
 - [2026-06-11 22:57 CEST]: Dependency Resolution and Build Fix
   - _Details_: Resolved a Next.js version incompatibility caused by a forceful npm audit resolution and successfully restored the production build.
   - _Tech Notes_: Upgraded `next` package to the latest supported version compatible with React 19 and the existing configuration (`next.config.ts`), and successfully ran `npm run build`.
+
+- [2026-06-11 23:03 CEST]: Remove Translation Button
+  - _Details_: Removed the clickable translation button (LocaleSwitcher) from both the Footer and the Upper fluctuating island (Navbar).
+  - _Tech Notes_: Edited `src/components/layout/Footer.tsx` and `src/components/layout/Navbar.tsx` to remove the LocaleSwitcher component and its imports.

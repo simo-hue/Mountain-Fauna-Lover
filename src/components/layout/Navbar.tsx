@@ -11,7 +11,6 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 import { BrandMark } from "../ui/BrandMark";
-import { LocaleSwitcher } from "./LocaleSwitcher";
 
 export function Navbar() {
   const t = useTranslations("nav");
@@ -62,7 +61,6 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-2">
-            <LocaleSwitcher compact />
             <a
               href={socials.youtube}
               target="_blank"
