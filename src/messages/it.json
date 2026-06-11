@@ -11,6 +11,9 @@
     "open": "Apri menu",
     "close": "Chiudi menu"
   },
+  "a11y": {
+    "skip": "Vai al contenuto"
+  },
   "footer": {
     "statement": "Un racconto quieto e cinematografico della fauna, della luce e dell'esplorazione nelle Alpi italiane.",
     "observe": "Osserva",
@@ -189,7 +192,183 @@
       }
     }
   },
+  "founder": {
+    "eyebrow": "Profilo del fondatore",
+    "title": "Una vita modellata dall'osservazione.",
+    "description": "Sono Mattioli Simone, un appassionato di montagna e fauna selvatica del Trentino-Alto Adige. Documento la natura alpina attraverso digiscoping, sci, avventure in e-bike e video cinematografici.",
+    "portraitAlt": "Ritratto provvisorio del fondatore Mattioli Simone",
+    "portraitNote": "Sostituisci questo segnaposto grafico con il ritratto definitivo in /public/images/founder/founder.jpg.",
+    "story": {
+      "eyebrow": "Note di campo in prima persona",
+      "title": "La montagna mi ha insegnato ad aspettare.",
+      "p1": "Sono Mattioli Simone, un appassionato di montagna e fauna selvatica del Trentino-Alto Adige. Con Mountain Fauna Lover documento la natura alpina attraverso il digiscoping, lo sci, le avventure in e-bike e video cinematografici.",
+      "p2": "Il mio mondo nasce dal silenzio, dalla pazienza e dall’osservazione: quei momenti sospesi prima che un animale compaia, l’aria fredda delle mattine invernali, le linee delle creste e il rispetto necessario per entrare nei luoghi selvaggi senza disturbarli.",
+      "p3": "Mountain Fauna Lover è il mio modo di condividere questo mondo: una visione a 360° delle Alpi, tra fauna, neve, tecnologia, esplorazione e racconto. La Val di Rabbi e il Parco Nazionale dello Stelvio non sono semplici luoghi: fanno parte del ritmo del progetto.",
+      "developer": "Oltre al racconto della montagna, sono anche uno sviluppatore software. Questo mi permette di unire natura, tecnologia e creatività, costruendo esperienze digitali con la stessa precisione e curiosità che porto in montagna."
+    },
+    "pillars": {
+      "observation": {
+        "title": "Osservazione",
+        "description": "Entrare in silenzio, restare lontani e notare ciò che la montagna rivela."
+      },
+      "mountain": {
+        "title": "Movimento",
+        "description": "Sci ed esplorazione in e-bike come modi per comprendere il territorio alpino."
+      },
+      "technology": {
+        "title": "Tecnologia",
+        "description": "Ottiche, camere e software usati con precisione, mai al posto della pazienza."
+      }
+    },
+    "linkedin": "Collegati su LinkedIn",
+    "collaboration": "Collabora"
+  },
+  "digiscoping": {
+    "eyebrow": "Osservazione a distanza",
+    "title": "La lente è un ponte, non un invito.",
+    "description": "Il digiscoping è l'arte di filmare o fotografare attraverso un cannocchiale. Per me è una pratica di pazienza, precisione e rispetto.",
+    "meaning": {
+      "eyebrow": "Cosa significa digiscoping",
+      "title": "Immagini più vicine. Maggiore distanza.",
+      "p1": "Il digiscoping è l’arte di filmare o fotografare attraverso un cannocchiale. Per me non è solo una tecnica: è un modo per osservare la fauna da lontano, con pazienza e rispetto.",
+      "p2": "Invece di avvicinarmi, il digiscoping permette alla montagna di rimanere indisturbata. L’animale resta nel suo mondo. Io resto nel mio. La lente diventa il ponte tra i due."
+    },
+    "scope": {
+      "north": "NORD ALPINO",
+      "distance": "DIST / 420M",
+      "magnification": "INGR / 60×"
+    },
+    "principles": {
+      "distance": {
+        "title": "Mantieni la distanza",
+        "description": "Nessuna immagine vale un cambiamento nel comportamento dell'animale. L'ingrandimento sostituisce l'avvicinamento."
+      },
+      "patience": {
+        "title": "Lascia passare il tempo",
+        "description": "L'osservazione si misura nell'immobilità. Il momento arriva secondo il ritmo della montagna, non il nostro."
+      },
+      "respect": {
+        "title": "Non creare pressione",
+        "description": "Nessun richiamo, inseguimento o incontro forzato. Registra ciò che si mostra liberamente e allontanati in silenzio."
+      }
+    },
+    "respect": {
+      "eyebrow": "La regola sul campo",
+      "title": "Il rispetto prima dello scatto.",
+      "description": "Un'immagine potente nasce dalla misura. Se l'animale si accorge, cambia direzione o diventa vigile, l'osservazione è già troppo vicina.",
+      "cta": "Guarda le storie dal campo"
+    }
+  },
+  "links": {
+    "eyebrow": "Segnale dalla montagna",
+    "title": "Segui la prossima osservazione.",
+    "description": "Film, momenti sul campo e la storia professionale dietro Mountain Fauna Lover, raccolti in un unico luogo quieto.",
+    "youtube": {
+      "eyebrow": "Canale principale",
+      "title": "YouTube",
+      "description": "Iscriviti per film alpini completi, osservazioni della fauna e racconti cinematografici."
+    },
+    "instagram": {
+      "eyebrow": "Momenti sul campo",
+      "title": "Instagram",
+      "description": "Segui brevi osservazioni, fotografia e aggiornamenti dalla montagna."
+    },
+    "tiktok": {
+      "eyebrow": "Film brevi",
+      "title": "TikTok",
+      "description": "Finestre veloci su fauna, neve e movimento alpino."
+    },
+    "linkedin": {
+      "eyebrow": "Profilo fondatore",
+      "title": "LinkedIn",
+      "description": "Collegati con Mattioli Simone per il profilo professionale e collaborazioni selezionate."
+    },
+    "email": {
+      "eyebrow": "Contatto diretto",
+      "title": "Scrivi dal campo.",
+      "description": "Per collaborazioni, progetti locali, brand outdoor e racconti alpini autentici."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Dati e fiducia",
+    "title": "Privacy, con chiarezza.",
+    "description": "Quali informazioni gestisce questo sito, perché vengono usate e quali scelte ha ogni visitatore.",
+    "record": "Registro informativa",
+    "updated": "Ultimo aggiornamento · 11 giugno 2026",
+    "sections": {
+      "controller": {
+        "title": "Chi gestisce i dati",
+        "body": "Mountain Fauna Lover, fondato da Mattioli Simone, gestisce i dati inviati attraverso questo sito. Le domande sulla privacy possono essere inviate a mattioli.simone.10@gmail.com."
+      },
+      "contact": {
+        "title": "Dati del modulo di contatto",
+        "body": "Quando invii il modulo collaborazioni, il sito tratta nome, email, organizzazione facoltativa, tipo di collaborazione e messaggio solo per valutare e rispondere alla richiesta. Il consenso privacy è obbligatorio."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "body": "Vercel Analytics può raccogliere informazioni tecniche e di utilizzo aggregate. Google Analytics viene caricato solo se un amministratore configura NEXT_PUBLIC_GA_ID. Nella prima versione non sono usati pixel pubblicitari o profili pubblicitari cross-site."
+      },
+      "retention": {
+        "title": "Conservazione e condivisione",
+        "body": "Le informazioni di contatto vengono conservate solo per il tempo ragionevolmente necessario a gestire la conversazione o collaborazione. I dati non vengono venduti. Servizi come Vercel e Resend trattano dati limitati solo per ospitare il sito e consegnare i messaggi."
+      },
+      "rights": {
+        "title": "I tuoi diritti",
+        "body": "In base alla legge applicabile, puoi chiedere accesso, correzione, cancellazione, limitazione o portabilità dei dati personali oppure opporti al trattamento. Contatta l'email indicata per inviare una richiesta."
+      },
+      "security": {
+        "title": "Sicurezza e aggiornamenti",
+        "body": "Vengono adottate misure tecniche ragionevoli, ma nessuna trasmissione internet è completamente priva di rischi. Questa informativa potrà essere aggiornata quando cambiano funzioni, analytics o requisiti legali."
+      }
+    }
+  },
+  "cookies": {
+    "eyebrow": "Preferenze locali",
+    "title": "Cookie senza rumore.",
+    "description": "Un riepilogo conciso delle preferenze e degli strumenti di misurazione che questa esperienza può memorizzare.",
+    "record": "Registro preferenze",
+    "updated": "Ultimo aggiornamento · 11 giugno 2026",
+    "sections": {
+      "essential": {
+        "title": "Funzionamento essenziale",
+        "body": "Il sito usa memorizzazione tecnicamente necessaria per routing e comportamento della sessione. Il completamento dell'intro è salvato in sessionStorage per non ripetere il portale del logo in modo aggressivo durante la stessa visita."
+      },
+      "language": {
+        "title": "Preferenza della lingua",
+        "body": "Il cookie MFL_LOCALE ricorda la scelta tra inglese e italiano. La lingua del browser viene usata per il primo reindirizzamento automatico quando non esiste una preferenza."
+      },
+      "analytics": {
+        "title": "Cookie analytics",
+        "body": "Vercel Analytics è attivo per misurazioni aggregate attente alla privacy. Google Analytics è facoltativo e viene caricato solo quando NEXT_PUBLIC_GA_ID è configurato; può quindi usare i propri cookie di misurazione."
+      },
+      "sound": {
+        "title": "Preferenza audio",
+        "body": "L'ambiente alpino opzionale resta disattivato finché non interagisci con il controllo. Una preferenza localStorage può ricordare se l'audio è stato attivato o disattivato. Il suono non parte mai automaticamente con volume attivo."
+      },
+      "control": {
+        "title": "Il tuo controllo",
+        "body": "Puoi cancellare cookie e memoria locale dalle impostazioni del browser. Bloccare le preferenze può azzerare lingua, intro o audio, ma il sito principale rimane disponibile."
+      }
+    }
+  },
   "gear": {
+    "page": {
+      "eyebrow": "Dietro l'osservazione",
+      "title": "Costruito per il meteo, la distanza e il tempo.",
+      "description": "Un archivio da campo modificabile manualmente con ottiche, camere, attrezzatura da montagna e software dietro il progetto.",
+      "archive": "Sistemi da campo",
+      "note": "Tutte le voci attuali sono segnaposto strutturati. Modelli, immagini e link facoltativi possono essere aggiunti senza cambiare il layout.",
+      "systems": "SISTEMI",
+      "notSponsored": "Segnaposto · Nessuna sponsorizzazione implicita"
+    },
+    "categories": {
+      "digiscoping": "Digiscoping / osservazione",
+      "camera": "Camera / video",
+      "support": "Treppiede / supporto",
+      "mountainSki": "Montagna / sci",
+      "ebikeOffroad": "E-bike / offroad",
+      "editingSoftware": "Montaggio / software"
+    },
     "items": {
       "spottingScope": {
         "name": "Setup Digiscoping",

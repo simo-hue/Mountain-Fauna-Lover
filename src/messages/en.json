@@ -11,6 +11,9 @@
     "open": "Open menu",
     "close": "Close menu"
   },
+  "a11y": {
+    "skip": "Skip to content"
+  },
   "footer": {
     "statement": "A quiet, cinematic record of wildlife, mountain light and exploration in the Italian Alps.",
     "observe": "Observe",
@@ -189,7 +192,183 @@
       }
     }
   },
+  "founder": {
+    "eyebrow": "Founder field profile",
+    "title": "A life shaped by looking closer.",
+    "description": "I’m Mattioli Simone, a mountain and wildlife enthusiast from Trentino-Alto Adige, documenting alpine nature through digiscoping, skiing, e-bike adventures and cinematic videos.",
+    "portraitAlt": "Founder portrait placeholder for Mattioli Simone",
+    "portraitNote": "Replace this designed placeholder with the final founder portrait at /public/images/founder/founder.jpg.",
+    "story": {
+      "eyebrow": "First-person field notes",
+      "title": "The mountain taught me to wait.",
+      "p1": "I’m Mattioli Simone, a mountain and wildlife enthusiast from Trentino-Alto Adige. Through Mountain Fauna Lover, I document alpine nature through digiscoping, skiing, e-bike adventures and cinematic videos.",
+      "p2": "My world is shaped by silence, patience and observation: the quiet moments before an animal appears, the cold air of winter mornings, the geometry of mountain ridges, and the respect required to enter wild places without disturbing them.",
+      "p3": "Mountain Fauna Lover is my way of sharing that world: a 360° vision of the Alps, from wildlife and snow to technology, exploration and storytelling. Val di Rabbi and Stelvio National Park are not just locations; they are part of the rhythm of the work.",
+      "developer": "Alongside mountain storytelling, I am also a software developer. This allows me to combine nature, technology and creativity — building digital experiences that reflect the same precision and curiosity I bring into the mountains."
+    },
+    "pillars": {
+      "observation": {
+        "title": "Observation",
+        "description": "Entering quietly, staying distant and noticing what the mountain reveals."
+      },
+      "mountain": {
+        "title": "Movement",
+        "description": "Skiing and e-bike exploration as ways to understand alpine terrain."
+      },
+      "technology": {
+        "title": "Technology",
+        "description": "Optics, cameras and software used with precision, never as a substitute for patience."
+      }
+    },
+    "linkedin": "Connect on LinkedIn",
+    "collaboration": "Collaborate"
+  },
+  "digiscoping": {
+    "eyebrow": "Observation at a distance",
+    "title": "The lens is a bridge, not an invitation.",
+    "description": "Digiscoping is the art of filming or photographing through a spotting scope. For me, it is a practice of patience, precision and respect.",
+    "meaning": {
+      "eyebrow": "What digiscoping means",
+      "title": "Closer images. Greater distance.",
+      "p1": "Digiscoping is the art of filming or photographing through a spotting scope. For me, it is more than a technique: it is a way to observe wildlife from distance, with patience and respect.",
+      "p2": "Instead of getting closer, digiscoping allows the mountain to remain undisturbed. The animal stays in its world. I stay in mine. The lens becomes the bridge between the two."
+    },
+    "scope": {
+      "north": "ALPINE NORTH",
+      "distance": "DIST / 420M",
+      "magnification": "MAG / 60×"
+    },
+    "principles": {
+      "distance": {
+        "title": "Keep the distance",
+        "description": "The image is never worth changing an animal’s behavior. Magnification replaces physical approach."
+      },
+      "patience": {
+        "title": "Let time pass",
+        "description": "Observation is measured in stillness. The moment arrives on the mountain’s schedule, not ours."
+      },
+      "respect": {
+        "title": "Leave no pressure",
+        "description": "No call, chase or forced encounter. Record what is freely visible and leave quietly."
+      }
+    },
+    "respect": {
+      "eyebrow": "The field rule",
+      "title": "Respect before the shot.",
+      "description": "A powerful image begins with restraint. If the animal notices, changes direction or becomes alert, the observation has already moved too close.",
+      "cta": "Watch the field stories"
+    }
+  },
+  "links": {
+    "eyebrow": "Mountain signal",
+    "title": "Follow the next observation.",
+    "description": "Films, field moments and the professional story behind Mountain Fauna Lover, gathered in one quiet place.",
+    "youtube": {
+      "eyebrow": "Primary channel",
+      "title": "YouTube",
+      "description": "Subscribe for full alpine films, wildlife observations and cinematic mountain stories."
+    },
+    "instagram": {
+      "eyebrow": "Field moments",
+      "title": "Instagram",
+      "description": "Follow short observations, photography and updates from the mountain."
+    },
+    "tiktok": {
+      "eyebrow": "Short films",
+      "title": "TikTok",
+      "description": "Fast windows into wildlife, snow and alpine movement."
+    },
+    "linkedin": {
+      "eyebrow": "Founder profile",
+      "title": "LinkedIn",
+      "description": "Connect with Mattioli Simone for professional context and selected collaborations."
+    },
+    "email": {
+      "eyebrow": "Direct contact",
+      "title": "Write from the field.",
+      "description": "For collaborations, local projects, outdoor brands and authentic alpine storytelling."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Data and trust",
+    "title": "Privacy, kept clear.",
+    "description": "What information this website handles, why it is used and the choices available to every visitor.",
+    "record": "Policy record",
+    "updated": "Last updated · June 11, 2026",
+    "sections": {
+      "controller": {
+        "title": "Who manages the data",
+        "body": "Mountain Fauna Lover, founded by Mattioli Simone, manages the data submitted through this website. Privacy questions can be sent to mattioli.simone.10@gmail.com."
+      },
+      "contact": {
+        "title": "Contact form data",
+        "body": "When you submit the collaboration form, the website processes your name, email address, optional organization, collaboration type and message only to review and respond to your request. Privacy consent is required before submission."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "body": "Vercel Analytics may collect aggregated technical and usage information. Google Analytics loads only when an administrator configures NEXT_PUBLIC_GA_ID. No advertising pixels or cross-site advertising profiles are used in version one."
+      },
+      "retention": {
+        "title": "Retention and sharing",
+        "body": "Contact information is retained only for as long as reasonably needed to manage the conversation or collaboration. Data is not sold. Service providers such as Vercel and Resend process limited data only to host the site and deliver messages."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "Depending on applicable law, you may request access, correction, deletion, restriction or portability of your personal data, or object to processing. Contact the email above to make a request."
+      },
+      "security": {
+        "title": "Security and updates",
+        "body": "Reasonable technical safeguards are used, but no internet transmission is completely risk-free. This notice may be updated when site features, analytics or legal requirements change."
+      }
+    }
+  },
+  "cookies": {
+    "eyebrow": "Local preferences",
+    "title": "Cookies without noise.",
+    "description": "A concise record of the preferences and measurement tools this experience may store.",
+    "record": "Preference record",
+    "updated": "Last updated · June 11, 2026",
+    "sections": {
+      "essential": {
+        "title": "Essential operation",
+        "body": "The site uses technically necessary storage for routing and session behavior. The intro completion flag is stored in sessionStorage so the logo portal does not replay aggressively during the same visit."
+      },
+      "language": {
+        "title": "Language preference",
+        "body": "The MFL_LOCALE cookie remembers whether you selected English or Italian. Browser language is used for the first automatic redirect when no preference exists."
+      },
+      "analytics": {
+        "title": "Analytics cookies",
+        "body": "Vercel Analytics is enabled for privacy-conscious aggregate measurement. Google Analytics is optional and loads only when NEXT_PUBLIC_GA_ID is configured; it may then use its own measurement cookies."
+      },
+      "sound": {
+        "title": "Sound preference",
+        "body": "The optional alpine ambience remains off until you interact with its control. A localStorage preference may remember whether the sound was enabled or disabled. Sound never autoplays with audio on."
+      },
+      "control": {
+        "title": "Your control",
+        "body": "You can clear cookies and local storage in your browser settings. Blocking preference storage may cause language, intro or sound choices to reset, but the main website remains available."
+      }
+    }
+  },
   "gear": {
+    "page": {
+      "eyebrow": "Behind the observation",
+      "title": "Built for weather, distance and time.",
+      "description": "A manually editable field archive of the optics, cameras, mountain equipment and software behind the work.",
+      "archive": "Field systems",
+      "note": "All current entries are structured placeholders. Exact models, images and optional links can be added without changing the page layout.",
+      "systems": "SYSTEMS",
+      "notSponsored": "Placeholder · No sponsorship implied"
+    },
+    "categories": {
+      "digiscoping": "Digiscoping / observation",
+      "camera": "Camera / video",
+      "support": "Tripod / support",
+      "mountainSki": "Mountain / ski",
+      "ebikeOffroad": "E-bike / offroad",
+      "editingSoftware": "Editing / software"
+    },
     "items": {
       "spottingScope": {
         "name": "Digiscoping Setup",

@@ -15,3 +15,7 @@
 - [2026-06-11 22:27 CEST]: Curated Videos and Modal Playback
   - _Details_: Added the bilingual videos archive with nine manually editable cinematic cards and an accessible modal viewing experience.
   - _Tech Notes_: YouTube embeds load only when a real `youtubeId` is configured and the modal opens. Placeholder entries present a branded fallback with a direct YouTube action. Escape closing, initial close-button focus, scroll locking, backdrop dismissal, and responsive rendering were verified in the browser.
+
+- [2026-06-11 22:34 CEST]: Founder, Digiscoping, Gear, Links, and Legal Pages
+  - _Details_: Added the complete bilingual founder story, educational digiscoping experience, editable gear archive, premium social link hub, privacy policy, and cookie policy.
+  - _Tech Notes_: Added per-page SEO metadata, a scroll-responsive scope study, founder portrait and fog-background placeholders, category-specific cursor treatments, LinkedIn-first founder actions, legal data/analytics disclosures, and locale-aware accessibility labels. The production build statically generates all English and Italian routes.
