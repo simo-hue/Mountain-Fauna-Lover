@@ -43,3 +43,6 @@
 - [2026-06-11 23:03 CEST]: Remove Translation Button
   - _Details_: Removed the clickable translation button (LocaleSwitcher) from both the Footer and the Upper fluctuating island (Navbar).
   - _Tech Notes_: Edited `src/components/layout/Footer.tsx` and `src/components/layout/Navbar.tsx` to remove the LocaleSwitcher component and its imports.
+- [2026-06-11 23:06 CEST]: Replace SVG logo with PNG
+  - _Details_: Replaced the inline SVG logo with the PNG logo in the `BrandMark` component.
+  - _Tech Notes_: Removed `public/logo/mountain-fauna-logo.svg` and updated `src/components/ui/BrandMark.tsx` to use `next/image` pointing to `mountain-fauna-logo.png`.
