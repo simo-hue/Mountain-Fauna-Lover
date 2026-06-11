@@ -115,19 +115,19 @@ Edit [`src/config/gear.ts`](src/config/gear.ts). Add exact product names, option
 
 The site runs without video or audio files. Missing optional media degrades to the cinematic still-image system.
 
-| Asset                                                 | Current state                                         |
-| ----------------------------------------------------- | ----------------------------------------------------- |
-| `public/logo/mountain-fauna-logo.png`                 | Optimized official supplied logo                      |
-| `public/logo/mountain-fauna-logo.svg`                 | Lightweight animated geometry companion               |
-| `public/images/founder/founder.jpeg`                  | Supplied founder portrait                             |
-| `public/images/backgrounds/alpine-night.jpg`          | Generated replaceable hero still                      |
-| `public/images/backgrounds/fog-mountain.jpg`          | Derived fog still                                     |
-| `public/images/videos/video-01.jpg` to `video-09.jpg` | Replaceable placeholder thumbnails                    |
-| `public/images/og/og-image.jpg`                       | Replaceable Open Graph image                          |
-| `public/videos/hero-fog.mp4`                          | Optional, not included                                |
-| `public/videos/alpine-background.mp4`                 | Optional, not included                                |
-| `public/audio/alpine-ambience.mp3`                    | Optional, not included; control reports pending audio |
-| `public/images/gear/`                                 | Add exact gear images when available                  |
+| Asset                                                 | Current state                           |
+| ----------------------------------------------------- | --------------------------------------- |
+| `public/logo/mountain-fauna-logo.png`                 | Optimized official supplied logo        |
+| `public/logo/mountain-fauna-logo.svg`                 | Lightweight animated geometry companion |
+| `public/images/founder/founder.jpeg`                  | Supplied founder portrait               |
+| `public/images/backgrounds/alpine-night.jpg`          | Generated replaceable hero still        |
+| `public/images/backgrounds/fog-mountain.jpg`          | Derived fog still                       |
+| `public/images/videos/video-01.jpg` to `video-09.jpg` | Replaceable placeholder thumbnails      |
+| `public/images/og/og-image.jpg`                       | Replaceable Open Graph image            |
+| `public/videos/hero-fog.mp4`                          | Lightweight generated intro placeholder |
+| `public/videos/alpine-background.mp4`                 | Lightweight generated hero placeholder  |
+| `public/audio/alpine-ambience.mp3`                    | Generated low-volume wind placeholder   |
+| `public/images/gear/`                                 | Add exact gear images when available    |
 
 Keep final hero videos short, muted, loopable, and web-compressed. Recommended delivery is H.264 MP4 with a poster image and a WebM alternative if desired.
 
@@ -215,6 +215,6 @@ No database or migration is required.
 - YouTube/Instagram stats are intentionally `0+` until manually updated.
 - Gear names and images are structured placeholders.
 - Hero still and OG art can be replaced with final commissioned footage or photography.
-- Alpine ambience and optional background video files are not included.
+- Alpine ambience and background videos are lightweight generated placeholders intended for replacement with final recordings.
 
 Development history and architectural changes are recorded in [`DOCUMENTATION.md`](DOCUMENTATION.md). Owner actions are tracked in [`TO_SIMO_DO.md`](TO_SIMO_DO.md).

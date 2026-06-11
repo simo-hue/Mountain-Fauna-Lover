@@ -55,6 +55,18 @@ export function LogoPortalIntro() {
           aria-modal="true"
           aria-label={t("label")}
         >
+          <video
+            className="absolute inset-0 hidden size-full object-cover opacity-20 motion-reduce:hidden sm:block"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/images/backgrounds/fog-mountain.jpg"
+            aria-hidden="true"
+          >
+            <source src="/videos/hero-fog.mp4" type="video/mp4" />
+          </video>
           <div className="scope-grid absolute inset-0 opacity-50" />
           <FogLayer strength="strong" />
           <motion.div

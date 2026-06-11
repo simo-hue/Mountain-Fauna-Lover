@@ -22,6 +22,18 @@ export function HeroSection() {
   return (
     <section className="noise relative min-h-[100svh] overflow-hidden bg-black">
       <div className="absolute inset-0 scale-[1.03] bg-[url('/images/backgrounds/alpine-night.jpg')] bg-cover bg-center" />
+      <video
+        className="absolute inset-0 hidden size-full object-cover opacity-70 motion-reduce:hidden md:block"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/images/backgrounds/alpine-night.jpg"
+        aria-hidden="true"
+      >
+        <source src="/videos/alpine-background.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.72)_0%,rgba(0,0,0,.22)_55%,rgba(0,0,0,.5)_100%),linear-gradient(180deg,rgba(0,0,0,.48)_0%,rgba(0,0,0,.05)_48%,#030303_100%)]" />
       <div className="absolute inset-0 hidden lg:block">
         <MountainScene3D />

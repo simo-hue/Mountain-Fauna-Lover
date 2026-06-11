@@ -31,3 +31,7 @@
 - [2026-06-11 22:49 CEST]: SEO, Consent, and Deployment Documentation
   - _Details_: Completed the search/discovery layer, analytics consent behavior, owner handoff, asset guide, environment reference, and Vercel deployment documentation.
   - _Tech Notes_: Added JSON-LD for WebSite, Brand/Organization, and Person; sitemap, robots, web app manifest, canonical locale alternates, consent-gated optional Google Analytics, retained Vercel Analytics, tracked optional asset directories, and documented every editable data source and placeholder.
+
+- [2026-06-11 22:50 CEST]: Alpine Media Placeholders
+  - _Details_: Added lightweight cinematic video and ambience placeholders at every media path required by the specification and integrated them with still-image and reduced-motion fallbacks.
+  - _Tech Notes_: Desktop hero and portal video use muted inline MP4 playback; mobile and reduced-motion users retain static imagery. The ambience remains user-controlled and stores its preference locally.

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -9,6 +9,19 @@ export function AmbientSoundToggle() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [enabled, setEnabled] = useState(false);
   const [unavailable, setUnavailable] = useState(false);
+
+  useEffect(() => {
+    if (window.localStorage.getItem("mfl-sound") !== "on") return;
+
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    audio.volume = 0.22;
+    audio
+      .play()
+      .then(() => setEnabled(true))
+      .catch(() => setEnabled(false));
+  }, []);
 
   const toggle = async () => {
     if (unavailable) return;

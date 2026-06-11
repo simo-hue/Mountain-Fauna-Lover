@@ -8,6 +8,6 @@ Before production launch:
 4. Replace the nine entries in `src/config/videos.ts` with real YouTube IDs/URLs and replace `public/images/videos/video-01.jpg` through `video-09.jpg`.
 5. Update the manual follower/subscriber values in `src/config/stats.ts`.
 6. Replace placeholder gear names/details in `src/config/gear.ts` and add exact gear images if desired.
-7. Add `public/audio/alpine-ambience.mp3` to enable the optional ambience control.
-8. Optionally add compressed `public/videos/hero-fog.mp4` and `public/videos/alpine-background.mp4` if video backgrounds are adopted later.
+7. Replace `public/audio/alpine-ambience.mp3` with a final licensed or original alpine ambience recording if desired.
+8. Replace the lightweight generated `public/videos/hero-fog.mp4` and `public/videos/alpine-background.mp4` placeholders with final compressed footage if available.
 9. Replace the generated hero/OG imagery with final commissioned assets if available.
