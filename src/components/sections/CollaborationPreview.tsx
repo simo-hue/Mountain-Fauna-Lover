@@ -13,7 +13,7 @@ export function CollaborationPreview() {
       <div className="absolute inset-0 bg-[url('/images/backgrounds/alpine-night.jpg')] bg-cover bg-center opacity-30" />
       <div className="absolute inset-0 bg-black/65" />
       <FogLayer strength="medium" />
-      <BrandMark className="absolute top-1/2 right-[5%] size-[28rem] -translate-y-1/2 text-white/[0.035]" />
+      <BrandMark className="absolute right-4 bottom-4 size-16 opacity-30 sm:right-8 sm:bottom-8 sm:size-24" />
       <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           index="07"

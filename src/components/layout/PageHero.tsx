@@ -26,7 +26,7 @@ export function PageHero({
       <div className="scope-grid absolute inset-0 opacity-20" />
       <FogLayer strength="soft" />
       <SnowParticles />
-      <BrandMark className="absolute top-[18%] right-[4%] size-[22rem] text-white/[0.035] sm:size-[34rem]" />
+      <BrandMark className="absolute right-4 bottom-4 size-16 opacity-30 sm:right-8 sm:bottom-8 sm:size-24" />
       <div className="relative mx-auto max-w-7xl">
         <div className="mb-7 flex items-center gap-3">
           <span className="font-mono text-[0.58rem] text-white/30">{code}</span>

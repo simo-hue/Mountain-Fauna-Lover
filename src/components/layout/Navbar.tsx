@@ -34,14 +34,12 @@ export function Navbar() {
         >
           <Link
             href="/"
-            className="focus-ring flex items-center gap-3 rounded-full"
+            className="focus-ring flex items-center gap-3 rounded-full -my-2.5"
             aria-label="Mountain Fauna Lover"
           >
-            <BrandMark className="size-9" />
-            <span className="hidden text-[0.64rem] leading-tight font-semibold tracking-[0.22em] text-white uppercase sm:block">
-              Mountain Fauna
-              <br />
-              Lover
+            <BrandMark className="size-14" />
+            <span className="hidden whitespace-nowrap text-[0.64rem] leading-tight font-semibold tracking-[0.22em] text-white uppercase sm:block">
+              Mountain Fauna Lover
             </span>
           </Link>
 

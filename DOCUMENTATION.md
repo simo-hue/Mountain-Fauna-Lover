@@ -49,3 +49,15 @@
 - [2026-06-11 23:32 CEST]: Cache Busted Logo Image
   - _Details_: Renamed the PNG logo file to bypass Next.js and browser caching which was causing the old logo version to display.
   - _Tech Notes_: Renamed `public/logo/mountain-fauna-logo.png` to `public/logo/mountain-fauna-logo-v2.png` and updated all Next.js Image component references in the source code to use the new filename.
+
+- [2026-06-11 23:36 CEST]: Minimize BrandMark Logo
+  - _Details_: Minimized the BrandMark logo and repositioned it to the bottom-right corner in Hero and Collaboration preview sections.
+  - _Tech Notes_: Updated tailwind classes in PageHero.tsx and CollaborationPreview.tsx.
+
+- [2026-06-11 23:40 CEST]: Navbar Text Layout
+  - _Details_: Set the 'Mountain Fauna Lover' text in the Navbar to strictly one line to avoid wrapping.
+  - _Tech Notes_: Removed <br/> and added whitespace-nowrap in src/components/layout/Navbar.tsx.
+
+- [2026-06-11 23:42 CEST]: Increase Navbar Logo Size
+  - _Details_: Increased the logo size to fill the full height of the floating island at the top.
+  - _Tech Notes_: Changed BrandMark to \`size-14\` and added \`-my-2.5\` to its Link container in \`src/components/layout/Navbar.tsx\`.
