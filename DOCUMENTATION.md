@@ -61,3 +61,23 @@
 - [2026-06-11 23:42 CEST]: Increase Navbar Logo Size
   - _Details_: Increased the logo size to fill the full height of the floating island at the top.
   - _Tech Notes_: Changed BrandMark to \`size-14\` and added \`-my-2.5\` to its Link container in \`src/components/layout/Navbar.tsx\`.
+
+- [2026-06-12 20:40 CEST]: Update Video 05
+  - _Details_: Added a new specific YouTube video link to the videos configuration and used its thumbnail.
+  - _Tech Notes_: Updated \`src/config/videos.ts\` for \`video-05\` with youtubeUrl \`https://youtu.be/nEh50VnbfXI?si=1HECZ5WQxbPna1V-\` and the corresponding thumbnail url.
+
+- [2026-06-12 20:41 CEST]: Update Video 06
+  - _Details_: Added a new specific YouTube video link to the videos configuration and used its thumbnail.
+  - _Tech Notes_: Updated \`src/config/videos.ts\` for \`video-06\` with youtubeUrl \`https://www.youtube.com/watch?v=6j-AEwMGFE4\` and the corresponding thumbnail url.
+
+- [2026-06-12 20:42 CEST]: Update Video 07
+  - _Details_: Added a new specific YouTube video link to the videos configuration and used its thumbnail.
+  - _Tech Notes_: Updated \`src/config/videos.ts\` for \`video-07\` with youtubeUrl \`https://youtu.be/bn1cIlhqL74?si=kMIpB_29rwCEcnCk\` and the corresponding thumbnail url.
+
+- [2026-06-12 20:44 CEST]: Update Video 08
+  - _Details_: Added a new specific YouTube video link to the videos configuration and used its thumbnail.
+  - _Tech Notes_: Updated \`src/config/videos.ts\` for \`video-08\` with youtubeUrl \`https://www.youtube.com/watch?v=NfDpfAOKuHY\` and the corresponding thumbnail url.
+
+- [2026-06-12 20:47 CEST]: Update Video 09
+  - _Details_: Added a new specific YouTube video link to the videos configuration and used its thumbnail.
+  - _Tech Notes_: Updated \`src/config/videos.ts\` for \`video-09\` with youtubeUrl \`https://youtu.be/bgMtDKP8j3w?si=KG4Q1GDASiK7JovY\` and the corresponding thumbnail url.

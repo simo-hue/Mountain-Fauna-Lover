@@ -27,7 +27,7 @@ export function FeaturedVideosPreview() {
           <ArrowLink href="/videos">{t("home.videos.cta")}</ArrowLink>
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-12">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {videos.map((video, index) => (
             <motion.div
               key={video.id}
@@ -35,36 +35,31 @@ export function FeaturedVideosPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 0.7, delay: index * 0.08 }}
-              className={index === 0 ? "lg:col-span-6" : "lg:col-span-3"}
             >
               <a
                 href={video.youtubeUrl}
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="play"
-                className="focus-ring group relative block aspect-[4/5] overflow-hidden rounded-[1.6rem] border border-white/10 bg-black"
+                className="focus-ring group relative block aspect-video overflow-hidden rounded-[1.6rem] border border-white/10 bg-black"
               >
                 <Image
                   src={video.thumbnail}
                   alt=""
                   fill
-                  sizes={
-                    index === 0
-                      ? "(max-width: 1024px) 100vw, 50vw"
-                      : "(max-width: 1024px) 100vw, 25vw"
-                  }
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition duration-1000 group-hover:scale-105 group-hover:opacity-75"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-black/15" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent opacity-80" />
                 <div className="absolute inset-4 rounded-[1.1rem] border border-white/0 transition group-hover:border-white/18" />
-                <div className="absolute top-6 right-6 grid size-11 place-items-center rounded-full border border-white/22 bg-black/25 backdrop-blur-md transition group-hover:scale-110 group-hover:bg-white group-hover:text-black">
+                <div className="absolute top-4 right-4 grid size-10 place-items-center rounded-full border border-white/22 bg-black/25 backdrop-blur-md transition group-hover:scale-110 group-hover:bg-white group-hover:text-black sm:top-6 sm:right-6 sm:size-11">
                   <Play className="size-3.5 fill-current" />
                 </div>
-                <div className="absolute right-6 bottom-6 left-6">
+                <div className="absolute right-5 bottom-5 left-5 sm:right-6 sm:bottom-6 sm:left-6">
                   <p className="eyebrow !text-white/48">
                     {t(`videos.categories.${video.category}`)}
                   </p>
-                  <h3 className="mt-3 text-2xl leading-tight font-light tracking-tight">
+                  <h3 className="mt-2 text-xl leading-tight font-light tracking-tight sm:mt-3 sm:text-2xl">
                     {t(`videos.${video.titleKey}`)}
                   </h3>
                 </div>
