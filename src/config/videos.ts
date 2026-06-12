@@ -49,7 +49,7 @@ export const featuredVideos: CuratedVideo[] = [
   },
   {
     id: "video-05",
-    category: "wildlife",
+    category: "ski",
     youtubeUrl: "https://youtu.be/nEh50VnbfXI?si=1HECZ5WQxbPna1V-",
     youtubeId: "nEh50VnbfXI",
     thumbnail: "https://i.ytimg.com/vi/nEh50VnbfXI/maxresdefault.jpg",
@@ -58,7 +58,7 @@ export const featuredVideos: CuratedVideo[] = [
   },
   {
     id: "video-06",
-    category: "digiscoping",
+    category: "wildlife",
     youtubeUrl: "https://www.youtube.com/watch?v=6j-AEwMGFE4",
     youtubeId: "6j-AEwMGFE4",
     thumbnail: "https://i.ytimg.com/vi/6j-AEwMGFE4/maxresdefault.jpg",
@@ -76,7 +76,7 @@ export const featuredVideos: CuratedVideo[] = [
   },
   {
     id: "video-08",
-    category: "ski",
+    category: "wildlife",
     youtubeUrl: "https://www.youtube.com/watch?v=NfDpfAOKuHY",
     youtubeId: "NfDpfAOKuHY",
     thumbnail: "https://i.ytimg.com/vi/NfDpfAOKuHY/maxresdefault.jpg",
@@ -85,7 +85,7 @@ export const featuredVideos: CuratedVideo[] = [
   },
   {
     id: "video-09",
-    category: "wildlife",
+    category: "exploration",
     youtubeUrl: "https://youtu.be/bgMtDKP8j3w?si=KG4Q1GDASiK7JovY",
     youtubeId: "bgMtDKP8j3w",
     thumbnail: "https://i.ytimg.com/vi/bgMtDKP8j3w/maxresdefault.jpg",

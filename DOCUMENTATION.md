@@ -81,3 +81,7 @@
 - [2026-06-12 20:47 CEST]: Update Video 09
   - _Details_: Added a new specific YouTube video link to the videos configuration and used its thumbnail.
   - _Tech Notes_: Updated \`src/config/videos.ts\` for \`video-09\` with youtubeUrl \`https://youtu.be/bgMtDKP8j3w?si=KG4Q1GDASiK7JovY\` and the corresponding thumbnail url.
+
+- [2026-06-12 20:50 CEST]: Update Categories and Translations for New Videos
+  - _Details_: Analyzed the newly inserted YouTube videos and assigned appropriate categories (ski, wildlife, exploration), and updated their bilingual title and description translations to match their real context.
+  - _Tech Notes_: Updated \`src/config/videos.ts\` categories for videos 05, 06, 08, 09. Updated \`src/messages/en.json\` and \`src/messages/it.json\` for keys \`items.video05\` to \`items.video09\`.
