@@ -15,13 +15,8 @@
     "skip": "Skip to content"
   },
   "footer": {
-    "statement": "A quiet, cinematic record of wildlife, mountain light and exploration in the Italian Alps.",
-    "observe": "Observe",
-    "information": "Information",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "tiktok": "TikTok",
-    "linkedin": "LinkedIn",
     "privacy": "Privacy",
     "cookies": "Cookies",
     "respect": "Respect before the shot"
@@ -97,7 +92,7 @@
       "eyebrow": "Selected observations",
       "title": "Stories found by waiting.",
       "description": "Cinematic moments from the alpine field, curated by hand.",
-      "cta": "Explore all films"
+      "cta": "Explore videos"
     },
     "digiscoping": {
       "eyebrow": "Distance is respect",
@@ -196,7 +191,7 @@
   "founder": {
     "eyebrow": "Founder field profile",
     "title": "A life shaped by looking closer.",
-    "description": "I’m Mattioli Simone, a mountain and wildlife enthusiast from Trentino-Alto Adige, documenting alpine nature through digiscoping, skiing, e-bike adventures and cinematic videos.",
+    "description": "I’m Mattioli Simone, a mountain and wildlife enthusiast from Trentino-Alto Adige, documenting alpine nature through digiscoping, skiing, e-bike adventures and vlogs.",
     "portraitAlt": "Portrait of founder Mattioli Simone",
     "story": {
       "eyebrow": "First-person field notes",
@@ -460,11 +455,11 @@
     "items": {
       "spottingScope": {
         "name": "Digiscoping Setup",
-        "description": "Spotting scope, phone or camera adapter, and careful manual control. Replace with the exact field setup."
+        "description": "Swarovski ATX 115mm + NL-Pure 14x52."
       },
       "cameraKit": {
         "name": "Camera & Video Setup",
-        "description": "A compact cinematic camera system prepared for changing alpine light. Replace with exact models."
+        "description": "Just a simple iPhone connected to my Swarovski gears through OLLIN magnetic adapter."
       },
       "tripod": {
         "name": "Tripod & Support",

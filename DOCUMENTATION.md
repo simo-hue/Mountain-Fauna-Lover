@@ -85,3 +85,23 @@
 - [2026-06-12 20:50 CEST]: Update Categories and Translations for New Videos
   - _Details_: Analyzed the newly inserted YouTube videos and assigned appropriate categories (ski, wildlife, exploration), and updated their bilingual title and description translations to match their real context.
   - _Tech Notes_: Updated \`src/config/videos.ts\` categories for videos 05, 06, 08, 09. Updated \`src/messages/en.json\` and \`src/messages/it.json\` for keys \`items.video05\` to \`items.video09\`.
+
+- [2026-06-12 20:54]: Remove Placeholder Text from Gear Page
+  - *Details*: Removed the "FIELD SYSTEMS" header and its accompanying placeholder explanation text from the Gear page as requested by the user.
+  - *Tech Notes*: Modified `src/app/[locale]/gear/page.tsx` to remove the div block rendering `gear.page.archive` and `gear.page.note` translations. Adjusted layout flex properties to maintain the proper alignment of the remaining section counter element.
+
+- [2026-06-12 20:55]: Remove horizontal line and systems text
+  - *Details*: Removed the border-bottom horizontal line and the "06 / SYSTEMS" text from the gear page as requested.
+  - *Tech Notes*: Removed the wrapping div from `src/app/[locale]/gear/page.tsx`.
+
+- [2026-06-12 21:01 CEST]: Adjust Footer layout
+  - *Details*: Moved the email, privacy, and cookies links from a vertical column to a horizontal layout between the copyright and respect text at the bottom of the footer, decreasing the overall footer height.
+  - *Tech Notes*: Modified `src/components/layout/Footer.tsx` to remove the third column and place the links within a new flex container in the bottom bar. Removed the unused `information` translation key from `src/messages/en.json` and `src/messages/it.json`.
+
+- [2026-06-12 21:06 CEST]: Merge and Thin Footer Elements
+  - *Details*: Further reduced the footer's visual height and footprint. Eliminated the upper right "Observe" grid column, moved YouTube and Instagram directly into the bottom bar alongside the legal links, and removed Email, TikTok, and LinkedIn links. Cut the top/bottom vertical paddings in half.
+  - *Tech Notes*: Edited `src/components/layout/Footer.tsx` to remove the grid layout and decrease padding values from `py-12 sm:py-16` to `py-6 sm:py-8`. Cleaned up unused `observe`, `tiktok`, and `linkedin` translation keys in both `en.json` and `it.json`.
+
+- [2026-06-12 21:12 CEST]: Convert to Minimalist Single-Row Footer
+  - *Details*: Completely removed the upper section containing the BrandMark, statement, and location text, transforming the footer into a clean, single-row layout. Generous padding (`py-8 sm:py-10`) was applied to ensure the single horizontal line still grounds the page effectively.
+  - *Tech Notes*: Replaced the entire DOM structure in `src/components/layout/Footer.tsx` to just output the bottom horizontal bar with generous padding. Removed the unused `BrandMark` component and `siteConfig` imports. Removed the now-unused `statement` translation key from `src/messages/en.json` and `src/messages/it.json`.

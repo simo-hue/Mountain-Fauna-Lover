@@ -50,17 +50,7 @@ export default async function GearPage({
       />
       <section className="px-5 py-20 sm:px-8 sm:py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-10 flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="eyebrow">{t("gear.page.archive")}</p>
-              <p className="mt-3 max-w-2xl text-sm leading-6 text-white/42">
-                {t("gear.page.note")}
-              </p>
-            </div>
-            <span className="font-mono text-[0.56rem] tracking-[0.14em] text-white/28">
-              06 / {t("gear.page.systems")}
-            </span>
-          </div>
+
 
           <div className="grid gap-5 md:grid-cols-2">
             {gearItems.map((item, index) => {
