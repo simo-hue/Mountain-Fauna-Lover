@@ -67,6 +67,24 @@ export default async function RootLayout({
       className={`${geist.variable} ${cormorant.variable}`}
     >
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                  let hasUnregistered = false;
+                  for(let registration of registrations) {
+                    registration.unregister();
+                    hasUnregistered = true;
+                  }
+                  if (hasUnregistered) {
+                    window.location.reload();
+                  }
+                });
+              }
+            `,
+          }}
+        />
         {children}
         <Analytics />
         <GoogleAnalytics />

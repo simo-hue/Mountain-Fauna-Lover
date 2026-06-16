@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ArrowRight, Check, LoaderCircle } from "lucide-react";
+import { ArrowRight, Check, LoaderCircle, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
+import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 import { Link } from "@/i18n/navigation";
 import {
@@ -71,11 +73,12 @@ export function CollaborationForm() {
     "focus-ring w-full rounded-xl border border-white/12 bg-white/[0.035] px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-white/22 hover:border-white/20 focus:border-ice/55";
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="rounded-[1.8rem] border border-white/10 bg-[#080808] p-6 sm:p-8"
-      noValidate
-    >
+    <>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="rounded-[1.8rem] border border-white/10 bg-[#080808] p-6 sm:p-8"
+        noValidate
+      >
       <div className="grid gap-6 sm:grid-cols-2">
         <Field
           label={t("name")}
@@ -209,20 +212,90 @@ export function CollaborationForm() {
         </p>
       </div>
 
-      {submission !== "idle" && (
+      {submission !== "idle" && submission !== "success" && (
         <div
-          className={cn(
-            "mt-6 rounded-xl border px-4 py-3 text-sm leading-6",
-            submission === "success"
-              ? "border-ice/25 bg-ice/5 text-ice"
-              : "border-red-300/20 bg-red-300/5 text-red-200",
-          )}
+          className="mt-6 rounded-xl border border-red-300/20 bg-red-300/5 px-4 py-3 text-sm leading-6 text-red-200"
           role="status"
         >
           {t(`status.${submission}`)}
         </div>
       )}
-    </form>
+      </form>
+      <SuccessModal isOpen={submission === "success"} onClose={() => setSubmission("idle")} t={t} />
+    </>
+  );
+}
+
+function SuccessModal({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => void; t: any }) {
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeRef.current?.focus();
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isOpen, onClose]);
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-[120] grid place-items-center overflow-y-auto bg-black/88 p-4 backdrop-blur-xl sm:p-8"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="success-modal-title"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) onClose();
+          }}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92, y: 24 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.94, y: 16 }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            className="relative my-auto w-full max-w-md overflow-hidden rounded-[1.6rem] border border-white/14 bg-[#080808] p-8 text-center shadow-2xl shadow-black"
+          >
+            <button
+              ref={closeRef}
+              type="button"
+              onClick={onClose}
+              className="focus-ring absolute top-4 right-4 z-10 grid size-10 place-items-center rounded-full border border-white/20 bg-black/65 text-white backdrop-blur-md transition hover:bg-white hover:text-black"
+              aria-label={t("successModal.close")}
+            >
+              <X className="size-4" />
+            </button>
+            <div className="mx-auto mb-8 flex h-10 items-center justify-center">
+              <Image
+                src="/logo/mountain-fauna-logo-v2.png"
+                alt="Mountain Fauna Logo"
+                width={150}
+                height={40}
+                className="h-full w-auto object-contain"
+              />
+            </div>
+            <h2 id="success-modal-title" className="text-xl font-light text-white sm:text-2xl">
+              {t("successModal.title")}
+            </h2>
+            <p className="mt-4 text-sm leading-6 text-white/52">
+              {t("successModal.description")}
+            </p>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 

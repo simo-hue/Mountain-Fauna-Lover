@@ -50,7 +50,7 @@ export async function POST(request: Request) {
   const { name, email, organization, collaborationType, message } = parsed.data;
 
   try {
-    const { error } = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from,
       to: [to],
       replyTo: email,
@@ -66,16 +66,17 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      console.error("Resend contact delivery failed", error);
+      console.error("Resend delivery failed:", error.name, error.message);
       return NextResponse.json(
         { ok: false, error: "deliveryFailed" },
         { status: 502 },
       );
     }
 
+    console.log("Contact email sent:", data?.id);
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("Contact route failed", error);
+    console.error("Contact route exception:", error);
     return NextResponse.json(
       { ok: false, error: "deliveryFailed" },
       { status: 500 },

@@ -121,3 +121,15 @@
 - [2026-06-16 21:39:00]: Rimozione opzione "Altro" dalla griglia visiva
   - *Details*: Rimosso il riquadro "Altro" dalla griglia della pagina Collaborazioni, mantenendo però l'opzione disponibile e selezionabile all'interno del menù a tendina del form di contatto.
   - *Tech Notes*: Ripristinato l'array `icons` rimuovendo `MessageSquare` e aggiunto un filtro `.filter((type) => type !== "other")` prima del `.map()` in `src/app/[locale]/collaboration/page.tsx`. L'opzione nel form `CollaborationForm` rimane visibile in quanto pesca direttamente tutti i valori della validazione Zod.
+
+- [2026-06-16 21:49:00]: Fix Hydration Mismatch dovuta a Service Worker Stale
+  - *Details*: Risolto un errore di hydration ("Hydration failed because the server rendered HTML didn't match the client") che si verificava in fase di sviluppo locale a causa di un vecchio Service Worker (`sw.js`) rimasto nella cache del browser dell'utente, che restituiva vecchi chunk React al client.
+  - *Tech Notes*: Aggiunto uno script inline nel tag `<body>` di `src/app/layout.tsx` per cercare ed annullare attivamente l'iscrizione (unregister) di eventuali Service Worker esistenti (spesso derivanti da configurazioni PWA precedenti). Eliminata anche la cache `.next`.
+
+- [2026-06-16 21:59:00]: Fix Resend Email Delivery — Collaboration Form
+  - *Details*: Resolved the "The message could not be delivered" error on the collaboration form. Root cause: Resend free tier without a verified domain only allows sending to the account's registered email. Configured `CONTACT_FROM_EMAIL=onboarding@resend.dev` and `CONTACT_TO_EMAIL` to match the Resend account email.
+  - *Tech Notes*: Updated `.env` values, improved error logging in `src/app/api/contact/route.ts` to include Resend error name/message and log successful email IDs. Updated `.env.example` with clear documentation about Resend free tier constraints. Verified end-to-end delivery via both standalone script and curl API test.
+
+- [6/16/2026, 10:08:19 PM]: Added Success Modal for Collaboration Form
+  - *Details*: Replaced the inline success message with a Framer Motion-based modal overlay featuring the website logo.
+  - *Tech Notes*: Updated `CollaborationForm.tsx` to use `AnimatePresence` and added `successModal` translation keys to `en.json` and `it.json`.

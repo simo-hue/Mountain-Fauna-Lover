@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Mountain Fauna Lover",
   founder: "Mattioli Simone",
-  email: "mattioli.simone.10@gmail.com",
+  email: "deerfaunalover@gmail.com",
   locations: ["Trentino-Alto Adige", "Val di Rabbi", "Stelvio National Park"],
   heroPhrase: {
     en: "Through my lens, a 360° journey into the wild heart of the Alps.",

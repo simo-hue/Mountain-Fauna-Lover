@@ -336,6 +336,11 @@
         "success": "Field note received. Thank you — I will review the project directly.",
         "error": "The message could not be delivered. Please use the direct email beside the form.",
         "notConfigured": "Email delivery is not configured yet. Please use the direct email beside the form."
+      },
+      "successModal": {
+        "title": "Request Received",
+        "description": "Thank you for reaching out. Your field note has been successfully delivered. I will review the project directly and get back to you shortly.",
+        "close": "Close"
       }
     }
   },

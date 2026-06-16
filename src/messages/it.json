@@ -336,6 +336,11 @@
         "success": "Nota ricevuta. Grazie — valuterò direttamente il progetto.",
         "error": "Il messaggio non è stato consegnato. Usa l'email diretta accanto al modulo.",
         "notConfigured": "L'invio email non è ancora configurato. Usa l'email diretta accanto al modulo."
+      },
+      "successModal": {
+        "title": "Richiesta Ricevuta",
+        "description": "Grazie per avermi contattato. La tua nota dal campo è stata consegnata con successo. Valuterò il progetto e ti risponderò al più presto.",
+        "close": "Chiudi"
       }
     }
   },

@@ -4,7 +4,10 @@ Before production launch:
 
 1. Copy `.env.example` to `.env.local` locally and configure the same values in Vercel.
 2. Set `NEXT_PUBLIC_SITE_URL` to the final production domain.
-3. Create a Resend API key, verify the sender domain, and set `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, and `CONTACT_TO_EMAIL`.
+3. Set the following env vars **in Vercel** (Project → Settings → Environment Variables):
+   - `RESEND_API_KEY` — your Resend API key
+   - `CONTACT_FROM_EMAIL` — set to `onboarding@resend.dev` (free tier) or `Mountain Fauna Lover <contact@yourdomain.com>` (with verified domain)
+   - `CONTACT_TO_EMAIL` — must match your Resend account email (`deerfaunalover@gmail.com`) unless you verify a custom domain
 4. Replace the nine entries in `src/config/videos.ts` with real YouTube IDs/URLs and replace `public/images/videos/video-01.jpg` through `video-09.jpg`.
 5. Update the manual follower/subscriber values in `src/config/stats.ts`.
 6. Replace placeholder gear names/details in `src/config/gear.ts` and add exact gear images if desired.
@@ -21,3 +24,4 @@ Before production launch:
 - [ ] ;
 - [ ] ;
 - [ ] ;
+- **Translations (Collaboration Form Modal)**: I have added a default "Thank You" message for the form submission success modal. You can tweak the text inside `src/messages/en.json` and `src/messages/it.json` under the `collaboration.form.successModal` key.
