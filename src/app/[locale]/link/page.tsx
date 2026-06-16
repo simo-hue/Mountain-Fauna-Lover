@@ -57,32 +57,32 @@ export default async function LinkPage({
   ];
 
   return (
-    <main className="min-h-[100dvh] flex flex-col items-center py-16 px-6 relative overflow-hidden bg-[#030303] selection:bg-[#bee9ff]/20">
+    <main className="min-h-[100dvh] w-full flex flex-col items-center justify-center px-6 py-12 overflow-y-auto overscroll-none bg-[#030303] selection:bg-[#bee9ff]/20">
       {/* Background Effects */}
-      <div className="absolute inset-0 scope-grid z-0 opacity-40" />
-      <div className="absolute inset-0 noise z-0" />
+      <div className="absolute inset-0 scope-grid z-0 opacity-40 pointer-events-none" />
+      <div className="absolute inset-0 noise z-0 pointer-events-none" />
       
       {/* Glowing Orbs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] bg-[#bee9ff] rounded-full mix-blend-screen filter blur-[120px] opacity-[0.04] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-white rounded-full mix-blend-screen filter blur-[100px] opacity-[0.03] pointer-events-none" />
       
-      <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col items-center mt-8">
+      <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col items-center my-auto">
         {/* Logo Section */}
-        <div className="flex flex-col items-center gap-6 mb-12">
-          <div className="relative w-32 h-32 flex items-center justify-center">
+        <div className="flex flex-col items-center gap-6 mb-10">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 flex items-center justify-center">
             {/* Logo Glow */}
-            <div className="absolute inset-2 bg-white rounded-full filter blur-2xl opacity-[0.08]" />
+            <div className="absolute inset-4 bg-white rounded-full filter blur-2xl opacity-[0.06]" />
             <Image
               src="/logo/mountain-fauna-logo-v2.png"
               alt="Mountain Fauna Lover Logo"
-              width={180}
-              height={180}
+              width={300}
+              height={300}
               className="w-full h-full object-contain drop-shadow-2xl relative z-10"
               priority
             />
           </div>
           
-          <div className="flex flex-col items-center gap-1">
+          <div className="flex flex-col items-center gap-1.5 -mt-2">
             <h1 className="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-white/90">
               {t("subtitle")}
             </h1>

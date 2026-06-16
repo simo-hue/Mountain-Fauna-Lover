@@ -24,3 +24,4 @@ Before production launch:
 - [ ] video defender da spostare dalla home;
 - [ ] test responsiveness da mobile;
 - [ ] A linktree like page for my useful links;
+- [ ] tradurre nuovo copy IT -> ENG;
