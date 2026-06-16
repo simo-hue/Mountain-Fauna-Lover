@@ -191,14 +191,14 @@
   "founder": {
     "eyebrow": "Profilo del fondatore",
     "title": "Una vita modellata dall'osservazione.",
-    "description": "Sono Mattioli Simone, un appassionato di montagna e fauna selvatica del Trentino-Alto Adige. Documento la natura alpina attraverso digiscoping, sci, avventure in e-bike e video cinematografici.",
+    "description": "Sono Mattioli Simone, un appassionato di montagna e fauna selvatica del Trentino-Alto Adige. Documento le mie avventure in montagna, a 360 gradi !",
     "portraitAlt": "Ritratto del fondatore Mattioli Simone",
     "story": {
       "eyebrow": "Note di campo in prima persona",
       "title": "La montagna mi ha insegnato ad aspettare.",
       "p1": "Sono Mattioli Simone, un appassionato di montagna e fauna selvatica del Trentino-Alto Adige. Con Mountain Fauna Lover documento la natura alpina attraverso il digiscoping, lo sci, le avventure in e-bike e video cinematografici.",
       "p2": "Il mio mondo nasce dal silenzio, dalla pazienza e dall’osservazione: quei momenti sospesi prima che un animale compaia, l’aria fredda delle mattine invernali, le linee delle creste e il rispetto necessario per entrare nei luoghi selvaggi senza disturbarli.",
-      "p3": "Mountain Fauna Lover è il mio modo di condividere questo mondo: una visione a 360° delle Alpi, tra fauna, neve, tecnologia, esplorazione e racconto. La Val di Rabbi e il Parco Nazionale dello Stelvio non sono semplici luoghi: fanno parte del ritmo del progetto.",
+      "p3": "Mountain Fauna Lover è il mio modo di condividere questo mondo: una visione a 360° delle Alpi, tra fauna, neve, tecnologia, esplorazione e racconto. La Val di Rabbi e il Parco Nazionale dello Stelvio non sono semplici luoghi, fanno parte sia del ritmo del progetto che anche di me.",
       "developer": "Oltre al racconto della montagna, sono anche uno sviluppatore software. Questo mi permette di unire natura, tecnologia e creatività, costruendo esperienze digitali con la stessa precisione e curiosità che porto in montagna."
     },
     "pillars": {
@@ -225,8 +225,8 @@
     "meaning": {
       "eyebrow": "Cosa significa digiscoping",
       "title": "Immagini più vicine. Maggiore distanza.",
-      "p1": "Il digiscoping è l’arte di filmare o fotografare attraverso un cannocchiale. Per me non è solo una tecnica: è un modo per osservare la fauna da lontano, con pazienza e rispetto.",
-      "p2": "Invece di avvicinarmi, il digiscoping permette alla montagna di rimanere indisturbata. L’animale resta nel suo mondo. Io resto nel mio. La lente diventa il ponte tra i due."
+      "p1": "Il digiscoping l'ho scoperto un po per caso grazie a mio papà che da sempre è stato appassionato all'avvistamento di animali. Quando poi ho iniziato a registrare notavo un forte interesse degli appassionati ai quali mostravo i miei filmati e così ho deciso di iniziare a pubblicarli online.",
+      "p2": "Ma sempre con una regola ben precisa: Il rispetto prima di tutto...Di certo non andrei mai a disturbare gli animali per poter girare una clip da pubblicare."
     },
     "scope": {
       "north": "NORD ALPINO",
@@ -240,7 +240,7 @@
       },
       "patience": {
         "title": "Lascia passare il tempo",
-        "description": "L'osservazione si misura nell'immobilità. Il momento arriva secondo il ritmo della montagna, non il nostro."
+        "description": "Il momento arriva secondo il ritmo della montagna, non il nostro. ( O magari non arriva nemmeno )"
       },
       "respect": {
         "title": "Non creare pressione",
