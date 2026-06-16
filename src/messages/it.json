@@ -49,7 +49,7 @@
       "description": "Scopri il digiscoping come modo paziente e rispettoso di osservare e documentare la fauna alpina da lontano."
     },
     "videos": {
-      "title": "Film Alpini",
+      "title": "video Alpini",
       "description": "Una raccolta curata di video cinematografici su fauna, digiscoping, sci ed esplorazione delle Alpi."
     },
     "gear": {
@@ -90,9 +90,9 @@
     },
     "videos": {
       "eyebrow": "Osservazioni selezionate",
-      "title": "Storie trovate aspettando.",
-      "description": "Momenti cinematografici dal campo alpino, selezionati a mano.",
-      "cta": "Esplora tutti i film"
+      "title": "Storie curiose aspettando.",
+      "description": "Momenti veramente indimenticabili, vissuti in prima persona.",
+      "cta": "Vedi di più"
     },
     "digiscoping": {
       "eyebrow": "La distanza è rispetto",
@@ -110,8 +110,8 @@
     },
     "gear": {
       "eyebrow": "Sistemi da campo",
-      "title": "Strumenti per la lunga attesa.",
-      "description": "Ottiche, sistemi video, attrezzatura da neve e strumenti di montaggio scelti per muoversi leggeri nella montagna.",
+      "title": "Strumenti del mestiere.",
+      "description": "Tutto quello che utilizzo.",
       "cta": "Apri il kit da campo"
     },
     "stats": {
@@ -119,21 +119,21 @@
       "title": "Un archivio alpino che cresce.",
       "youtubeSubscribers": "Iscritti YouTube",
       "instagramFollowers": "Follower Instagram",
-      "featuredVideos": "Film in evidenza",
+      "featuredVideos": "Video in evidenza",
       "alpineStories": "Visione alpina"
     },
     "collaboration": {
       "eyebrow": "Lavorare nel selvaggio",
       "title": "Creiamo una storia che valga la pena portare a casa.",
-      "description": "Collaborazioni selezionate con brand, territori e creator che rispettano la montagna, la fauna e il racconto cinematografico autentico.",
+      "description": "Solo per video autentici !",
       "cta": "Inizia una collaborazione"
     }
   },
   "videos": {
     "page": {
-      "eyebrow": "Film alpini selezionati",
+      "eyebrow": "video alpini selezionati",
       "title": "Note di campo in movimento.",
-      "description": "Nove osservazioni selezionate tra fauna, digiscoping, sci ed esplorazione alpina. Ogni film inizia con distanza, pazienza e attenzione.",
+      "description": "Nove osservazioni selezionate tra fauna, digiscoping, sci ed esplorazione alpina. Ogni video inizia con distanza, pazienza e attenzione.",
       "archive": "Archivio osservazioni",
       "manual": "Selezione manuale · 09 elementi"
     },
@@ -283,7 +283,7 @@
       },
       "cinematicContent": {
         "title": "Contenuti social cinematografici",
-        "description": "Film brevi e lunghi pensati per i canali social senza perdere atmosfera."
+        "description": "video brevi e lunghi pensati per i canali social senza perdere atmosfera."
       }
     },
     "contact": {
@@ -341,7 +341,7 @@
     "youtube": {
       "eyebrow": "Canale principale",
       "title": "YouTube",
-      "description": "Iscriviti per film alpini completi, osservazioni della fauna e racconti cinematografici."
+      "description": "Iscriviti per video alpini completi, osservazioni della fauna e racconti cinematografici."
     },
     "instagram": {
       "eyebrow": "Momenti sul campo",
@@ -349,7 +349,7 @@
       "description": "Segui brevi osservazioni, fotografia e aggiornamenti dalla montagna."
     },
     "tiktok": {
-      "eyebrow": "Film brevi",
+      "eyebrow": "video brevi",
       "title": "TikTok",
       "description": "Finestre veloci su fauna, neve e movimento alpino."
     },
@@ -455,27 +455,27 @@
     "items": {
       "spottingScope": {
         "name": "Setup Digiscoping",
-        "description": "Cannocchiale, adattatore smartphone o camera e controllo manuale. Da sostituire con il setup reale."
+        "description": "Swarovski ATX 115mm per le riprese."
       },
       "cameraKit": {
         "name": "Setup Camera & Video",
-        "description": "Un sistema cinematografico compatto preparato per la luce alpina che cambia. Da sostituire con i modelli reali."
+        "description": "iPhone 17 Pro Max."
       },
       "tripod": {
         "name": "Treppiede & Supporto",
-        "description": "Supporto stabile per lunghe osservazioni e movimenti precisi su terreno irregolare."
+        "description": "Swarovski PCT professional carbon tripod."
       },
       "skiKit": {
-        "name": "Attrezzatura Sci & Montagna",
-        "description": "Attrezzatura tecnica invernale scelta per sicurezza, mobilità e lunghe giornate all'aperto."
+        "name": "Action Cam",
+        "description": "Insta360 Ace Pro & x5."
       },
       "ebikeKit": {
         "name": "Attrezzatura E-bike & Offroad",
-        "description": "Strumenti di esplorazione per raggiungere responsabilmente i sentieri più lontani."
+        "description": "KTM Kapho Master 2022 & Land Rover Defender 90."
       },
       "editingSuite": {
         "name": "Montaggio & Software",
-        "description": "La camera oscura digitale dove le riprese sul campo diventano storie alpine cinematografiche."
+        "description": "Final Cut Pro."
       }
     }
   }
