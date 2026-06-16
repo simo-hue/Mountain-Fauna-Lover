@@ -57,7 +57,7 @@ export default async function LinkPage({
   ];
 
   return (
-    <main className="min-h-[100dvh] w-full flex flex-col items-center justify-center px-6 py-12 overflow-y-auto overscroll-none bg-[#030303] selection:bg-[#bee9ff]/20">
+    <main className="fixed inset-0 h-[100dvh] w-[100vw] flex flex-col items-center justify-center px-6 overflow-hidden bg-[#030303] selection:bg-[#bee9ff]/20">
       {/* Background Effects */}
       <div className="absolute inset-0 scope-grid z-0 opacity-40 pointer-events-none" />
       <div className="absolute inset-0 noise z-0 pointer-events-none" />
@@ -68,16 +68,16 @@ export default async function LinkPage({
       
       <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col items-center my-auto">
         {/* Logo Section */}
-        <div className="flex flex-col items-center gap-6 mb-10">
-          <div className="relative w-48 h-48 sm:w-56 sm:h-56 flex items-center justify-center">
+        <div className="flex flex-col items-center gap-2 mb-8">
+          <div className="relative w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center">
             {/* Logo Glow */}
             <div className="absolute inset-4 bg-white rounded-full filter blur-2xl opacity-[0.06]" />
             <Image
               src="/logo/mountain-fauna-logo-v2.png"
               alt="Mountain Fauna Lover Logo"
-              width={300}
-              height={300}
-              className="w-full h-full object-contain drop-shadow-2xl relative z-10"
+              width={400}
+              height={400}
+              className="w-full h-full object-contain drop-shadow-2xl relative z-10 scale-[1.35]"
               priority
             />
           </div>
