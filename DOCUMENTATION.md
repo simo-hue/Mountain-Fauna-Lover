@@ -153,3 +153,7 @@
 - [2026-06-16T22:58:00]: Mobile-First Linktree Page Implementation
   - *Details*: Created a new, isolated `/link` page acting as a personal linktree optimized for mobile, featuring the brand's logo, subtitle, and social/contact links. Integrated with the existing scope-grid aesthetic and translation system.
   - *Tech Notes*: Added `src/app/[locale]/link/page.tsx` utilizing Next.js Image, and the localized `Link` component. Injected `linkPage` configuration containing labels to `src/messages/en.json` and `src/messages/it.json`. Verified successful static generation in the Next.js build.
+
+- [2026-06-16 23:25:00]: Next.js Middleware Deprecation Ghost Warning Fix
+  - *Details*: Resolved a lingering Next.js 16 warning (`The "middleware" file convention is deprecated`) that continued to appear in the terminal after migrating to `proxy.ts`. The issue was caused by an aggressive `.next` cache retaining old routing entries.
+  - *Tech Notes*: Verified `src/proxy.ts` integration. Forcefully cleared the `.next` build cache directory (`rm -rf .next`). Appended a prompt in `TO_SIMO_DO.md` to manually restart the dev server to rebuild the routing tree without the ghost warnings.
