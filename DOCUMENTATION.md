@@ -133,3 +133,15 @@
 - [6/16/2026, 10:08:19 PM]: Added Success Modal for Collaboration Form
   - *Details*: Replaced the inline success message with a Framer Motion-based modal overlay featuring the website logo.
   - *Tech Notes*: Updated `CollaborationForm.tsx` to use `AnimatePresence` and added `successModal` translation keys to `en.json` and `it.json`.
+
+- [2026-06-16 22:19:39]: Repository Cleanup
+  - *Details*: Set the `main` branch to mirror the state of the art `codex` branch and completely removed the `gemini` branch.
+  - *Tech Notes*: Executed `git reset --hard codex` on `main` and `git push origin main --force`. Deleted the `gemini` branch locally and remotely.
+
+- [2026-06-16T22:25:00]: Fix broken video thumbnail
+  - *Details*: Fixed a missing thumbnail for the "Chamois Cubs on the Peak" video. YouTube does not generate a `maxresdefault.jpg` for every video, which caused a broken image link.
+  - *Tech Notes*: Replaced `maxresdefault.jpg` with `hqdefault.jpg` for video `6j-AEwMGFE4` in `src/config/videos.ts`.
+
+- [2026-06-16T22:25:30]: Update Selected Observations
+  - *Details*: Swapped the "defender" video with the "Chamois Cubs on the Peak" video in the "Selected observations" section on the home page.
+  - *Tech Notes*: Swapped the positions of `video-01` and `video-06` in the `featuredVideos` array in `src/config/videos.ts`.

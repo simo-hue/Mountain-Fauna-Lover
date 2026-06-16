@@ -12,13 +12,13 @@ export type CuratedVideo = {
 
 export const featuredVideos: CuratedVideo[] = [
   {
-    id: "video-01",
+    id: "video-06",
     category: "wildlife",
-    youtubeUrl: "https://youtu.be/wQrx2422wD8?si=rW2Xxw4PZ-AnipT9",
-    youtubeId: "wQrx2422wD8",
-    thumbnail: "https://i.ytimg.com/vi/wQrx2422wD8/maxresdefault.jpg",
-    titleKey: "items.video01.title",
-    descriptionKey: "items.video01.description",
+    youtubeUrl: "https://www.youtube.com/watch?v=6j-AEwMGFE4",
+    youtubeId: "6j-AEwMGFE4",
+    thumbnail: "https://i.ytimg.com/vi/6j-AEwMGFE4/hqdefault.jpg",
+    titleKey: "items.video06.title",
+    descriptionKey: "items.video06.description",
   },
   {
     id: "video-02",
@@ -57,13 +57,13 @@ export const featuredVideos: CuratedVideo[] = [
     descriptionKey: "items.video05.description",
   },
   {
-    id: "video-06",
+    id: "video-01",
     category: "wildlife",
-    youtubeUrl: "https://www.youtube.com/watch?v=6j-AEwMGFE4",
-    youtubeId: "6j-AEwMGFE4",
-    thumbnail: "https://i.ytimg.com/vi/6j-AEwMGFE4/maxresdefault.jpg",
-    titleKey: "items.video06.title",
-    descriptionKey: "items.video06.description",
+    youtubeUrl: "https://youtu.be/wQrx2422wD8?si=rW2Xxw4PZ-AnipT9",
+    youtubeId: "wQrx2422wD8",
+    thumbnail: "https://i.ytimg.com/vi/wQrx2422wD8/maxresdefault.jpg",
+    titleKey: "items.video01.title",
+    descriptionKey: "items.video01.description",
   },
   {
     id: "video-07",

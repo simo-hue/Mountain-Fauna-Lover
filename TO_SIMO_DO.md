@@ -20,8 +20,6 @@ Before production launch:
 - [ ] Generare un logo di più qualità;
 - [ ] Inserire i Video che voglio salvare;
 - [ ] Tengo audio nel footer;
-- [ ] ;
-- [ ] ;
-- [ ] ;
-- [ ] ;
-- **Translations (Collaboration Form Modal)**: I have added a default "Thank You" message for the form submission success modal. You can tweak the text inside `src/messages/en.json` and `src/messages/it.json` under the `collaboration.form.successModal` key.
+- [ ] inserire le mie immagini;
+- [ ] video defender da spostare dalla home;
+- [ ] test responsiveness da mobile;
