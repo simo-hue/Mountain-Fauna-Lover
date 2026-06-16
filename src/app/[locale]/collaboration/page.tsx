@@ -15,7 +15,14 @@ import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
 import { collaborationTypes } from "@/lib/validations";
 
-const icons = [MountainSnow, Compass, Trees, PackageSearch, Bike, Camera];
+const icons = [
+  MountainSnow,
+  Compass,
+  Trees,
+  PackageSearch,
+  Bike,
+  Camera,
+];
 
 export async function generateMetadata({
   params,
@@ -63,7 +70,9 @@ export default async function CollaborationPage({
             </h2>
           </div>
           <div className="grid gap-px overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-3">
-            {collaborationTypes.map((type, index) => {
+            {collaborationTypes
+              .filter((type) => type !== "other")
+              .map((type, index) => {
               const Icon = icons[index];
               return (
                 <article key={type} className="bg-[#080808] p-7 sm:p-8">

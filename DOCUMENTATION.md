@@ -105,3 +105,19 @@
 - [2026-06-12 21:12 CEST]: Convert to Minimalist Single-Row Footer
   - *Details*: Completely removed the upper section containing the BrandMark, statement, and location text, transforming the footer into a clean, single-row layout. Generous padding (`py-8 sm:py-10`) was applied to ensure the single horizontal line still grounds the page effectively.
   - *Tech Notes*: Replaced the entire DOM structure in `src/components/layout/Footer.tsx` to just output the bottom horizontal bar with generous padding. Removed the unused `BrandMark` component and `siteConfig` imports. Removed the now-unused `statement` translation key from `src/messages/en.json` and `src/messages/it.json`.
+
+- [2026-06-16 21:34:00]: Aggiornamento Copywriting Messaggi IT
+  - *Details*: Migliorato il testo della descrizione per la sezione collaborazioni in `it.json` per renderlo più fluido, elegante e professionale, eliminando ripetizioni testuali ("per me... per nessuna").
+  - *Tech Notes*: Modificato `src/messages/it.json` alla riga 260. Sostituito `"Un valore per me non negoziabile per nessuna collaborazione."` con `"Un valore imprescindibile alla base di ogni mia collaborazione."`.
+
+- [2026-06-16 21:37:00]: Aggiunta opzione "Altro" in Collaborazioni
+  - *Details*: Aggiunta la voce "Altro" tra i tipi di collaborazione selezionabili, per permettere agli utenti di inserire richieste non coperte dalle categorie predefinite.
+  - *Tech Notes*: Aggiunto il valore "other" all'array `collaborationTypes` in `src/lib/validations.ts`. Aggiunte le relative traduzioni ai campi `types` e `form.types` in sia `src/messages/it.json` che `src/messages/en.json`.
+
+- [2026-06-16 21:38:00]: Fix React Runtime Error su CollaborationPage
+  - *Details*: Risolto un crash di pagina avvenuto in seguito all'aggiunta del settimo elemento ("Altro") nella lista delle collaborazioni, che causava l'errore "Element type is invalid: expected a string... but got: undefined".
+  - *Tech Notes*: Aggiornato l'array `icons` in `src/app/[locale]/collaboration/page.tsx` con un settimo elemento (`MessageSquare` da `lucide-react`) in modo da mappare correttamente tutti i tipi di collaborazione.
+
+- [2026-06-16 21:39:00]: Rimozione opzione "Altro" dalla griglia visiva
+  - *Details*: Rimosso il riquadro "Altro" dalla griglia della pagina Collaborazioni, mantenendo però l'opzione disponibile e selezionabile all'interno del menù a tendina del form di contatto.
+  - *Tech Notes*: Ripristinato l'array `icons` rimuovendo `MessageSquare` e aggiunto un filtro `.filter((type) => type !== "other")` prima del `.map()` in `src/app/[locale]/collaboration/page.tsx`. L'opzione nel form `CollaborationForm` rimane visibile in quanto pesca direttamente tutti i valori della validazione Zod.

@@ -284,6 +284,10 @@
       "cinematicContent": {
         "title": "Cinematic social content",
         "description": "Short and long-form films shaped for social channels without losing atmosphere."
+      },
+      "other": {
+        "title": "Other",
+        "description": "If you can't find a suitable category for your request, describe it here."
       }
     },
     "contact": {
@@ -314,7 +318,8 @@
         "wildlife": "Wildlife or nature project",
         "gear": "Gear or technical equipment",
         "alpineExperience": "Ski, e-bike or alpine experience",
-        "cinematicContent": "Cinematic social content"
+        "cinematicContent": "Cinematic social content",
+        "other": "Other"
       },
       "validation": {
         "nameRequired": "Enter at least two characters.",

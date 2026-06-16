@@ -7,6 +7,7 @@ export const collaborationTypes = [
   "gear",
   "alpineExperience",
   "cinematicContent",
+  "other",
 ] as const;
 
 export const contactSchema = z.object({

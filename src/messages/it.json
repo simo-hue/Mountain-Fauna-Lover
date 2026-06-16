@@ -256,14 +256,14 @@
   },
   "collaboration": {
     "eyebrow": "Partnership selezionate",
-    "title": "Costruiamo qualcosa di autentico per la montagna.",
-    "description": "Mountain Fauna Lover è disponibile per collaborazioni selezionate con brand, enti turistici, progetti outdoor e creator che condividono il rispetto per la montagna, la fauna e il racconto autentico.",
+    "title": "L'autenticità",
+    "description": "Un valore imprescindibile alla base di ogni mia collaborazione.",
     "typesEyebrow": "Modi per lavorare insieme",
-    "typesTitle": "Un paesaggio. Molte storie sincere.",
+    "typesTitle": "Molte storie sincere.",
     "types": {
       "outdoorBrand": {
         "title": "Brand outdoor e montagna",
-        "description": "Storie di prodotto nate sul campo e legate a un uso alpino reale, senza promesse costruite."
+        "description": "Brand che puntano all’eccellenza e sono legati al territorio alpino."
       },
       "tourism": {
         "title": "Enti turistici e territori",
@@ -284,6 +284,10 @@
       "cinematicContent": {
         "title": "Contenuti social cinematografici",
         "description": "video brevi e lunghi pensati per i canali social senza perdere atmosfera."
+      },
+      "other": {
+        "title": "Altro",
+        "description": "Se non trovi una categoria adatta per la tua richiesta, descrivila qui."
       }
     },
     "contact": {
@@ -314,7 +318,8 @@
         "wildlife": "Progetto fauna o natura",
         "gear": "Attrezzatura tecnica",
         "alpineExperience": "Esperienza sci, e-bike o alpina",
-        "cinematicContent": "Contenuto social cinematografico"
+        "cinematicContent": "Contenuto social cinematografico",
+        "other": "Altro"
       },
       "validation": {
         "nameRequired": "Inserisci almeno due caratteri.",
