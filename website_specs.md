@@ -1195,7 +1195,7 @@ mountain-fauna-lover/
     messages/
       en.json
       it.json
-  middleware.ts
+  proxy.ts
   next.config.ts
   tailwind.config.ts
   package.json

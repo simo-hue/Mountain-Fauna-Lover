@@ -145,3 +145,7 @@
 - [2026-06-16T22:25:30]: Update Selected Observations
   - *Details*: Swapped the "defender" video with the "Chamois Cubs on the Peak" video in the "Selected observations" section on the home page.
   - *Tech Notes*: Swapped the positions of `video-01` and `video-06` in the `featuredVideos` array in `src/config/videos.ts`.
+
+- [2026-06-16T22:32:00]: Next.js 16 Middleware Migration
+  - *Details*: Renamed `middleware.ts` to `proxy.ts` to conform with Next.js 16's deprecation of the middleware file convention.
+  - *Tech Notes*: Moved `src/middleware.ts` to `src/proxy.ts` and updated references in `website_specs.md`.
