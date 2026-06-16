@@ -23,3 +23,4 @@ Before production launch:
 - [ ] inserire le mie immagini;
 - [ ] video defender da spostare dalla home;
 - [ ] test responsiveness da mobile;
+- [ ] A linktree like page for my useful links;

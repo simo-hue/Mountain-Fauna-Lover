@@ -1,11 +1,18 @@
+"use client";
+
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { socials } from "@/config/socials";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 export function Footer() {
   const t = useTranslations("footer");
+  const pathname = usePathname();
+
+  if (pathname.endsWith("/link")) {
+    return null;
+  }
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-[#030303] px-5 py-8 sm:px-8 sm:py-10">

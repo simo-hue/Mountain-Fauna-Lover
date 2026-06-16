@@ -149,3 +149,7 @@
 - [2026-06-16T22:32:00]: Next.js 16 Middleware Migration
   - *Details*: Renamed `middleware.ts` to `proxy.ts` to conform with Next.js 16's deprecation of the middleware file convention.
   - *Tech Notes*: Moved `src/middleware.ts` to `src/proxy.ts` and updated references in `website_specs.md`.
+
+- [2026-06-16T22:58:00]: Mobile-First Linktree Page Implementation
+  - *Details*: Created a new, isolated `/link` page acting as a personal linktree optimized for mobile, featuring the brand's logo, subtitle, and social/contact links. Integrated with the existing scope-grid aesthetic and translation system.
+  - *Tech Notes*: Added `src/app/[locale]/link/page.tsx` utilizing Next.js Image, and the localized `Link` component. Injected `linkPage` configuration containing labels to `src/messages/en.json` and `src/messages/it.json`. Verified successful static generation in the Next.js build.

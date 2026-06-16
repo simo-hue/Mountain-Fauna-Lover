@@ -4,14 +4,19 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 const CONSENT_KEY = "mfl-analytics-consent";
 
 export function CookieConsent() {
   const t = useTranslations("cookies.banner");
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const analyticsAvailable = Boolean(process.env.NEXT_PUBLIC_GA_ID);
+
+  if (pathname.endsWith("/link")) {
+    return null;
+  }
 
   useEffect(() => {
     if (!analyticsAvailable) return;
