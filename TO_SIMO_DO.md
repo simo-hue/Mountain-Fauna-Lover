@@ -25,3 +25,4 @@ Before production launch:
 - [ ] test responsiveness da mobile;
 - [ ] A linktree like page for my useful links;
 - [ ] tradurre nuovo copy IT -> ENG;
+- [ ] OTTIMIZZAZIONE GEO e SEO;
