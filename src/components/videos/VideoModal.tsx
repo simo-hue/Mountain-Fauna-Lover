@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { ExternalLink, Play, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -37,7 +37,7 @@ export function VideoModal({
   return (
     <AnimatePresence>
       {video && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -49,7 +49,7 @@ export function VideoModal({
             if (event.target === event.currentTarget) onClose();
           }}
         >
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.92, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.94, y: 16 }}
@@ -76,7 +76,7 @@ export function VideoModal({
                   allowFullScreen
                 />
               ) : (
-                <div className="relative grid size-full place-items-center overflow-hidden bg-[url('/images/backgrounds/alpine-night.jpg')] bg-cover bg-center">
+                <div className="alpine-night-bg relative grid size-full place-items-center overflow-hidden bg-cover bg-center">
                   <div className="absolute inset-0 bg-black/58" />
                   <div className="relative max-w-md px-8 text-center">
                     <span className="mx-auto grid size-16 place-items-center rounded-full border border-white/25 bg-black/25">
@@ -115,8 +115,8 @@ export function VideoModal({
                 <ExternalLink className="size-3.5" />
               </a>
             </div>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

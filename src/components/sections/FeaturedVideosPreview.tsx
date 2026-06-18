@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Play } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -29,7 +29,7 @@ export function FeaturedVideosPreview() {
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {videos.map((video, index) => (
-            <motion.div
+            <m.div
               key={video.id}
               initial={{ opacity: 0, y: 26 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export function FeaturedVideosPreview() {
                   </h3>
                 </div>
               </a>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

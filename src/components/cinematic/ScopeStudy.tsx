@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 export function ScopeStudy() {
@@ -17,20 +17,20 @@ export function ScopeStudy() {
 
   return (
     <div ref={ref} className="relative py-12 sm:py-20" data-cursor="lens">
-      <motion.div
+      <m.div
         style={{ scale }}
         className="relative mx-auto aspect-square w-[min(82vw,42rem)] rounded-full border border-white/26 p-4 shadow-[0_0_120px_rgba(190,233,255,.06)]"
       >
-        <motion.span
+        <m.span
           style={{ rotate }}
           className="absolute -inset-5 rounded-full border border-dashed border-white/12"
         />
         <span className="absolute top-1/2 -right-[12%] -left-[12%] h-px bg-gradient-to-r from-transparent via-white/32 to-transparent" />
         <span className="absolute -top-[12%] -bottom-[12%] left-1/2 w-px bg-gradient-to-b from-transparent via-white/32 to-transparent" />
         <div className="relative size-full overflow-hidden rounded-full border border-white/15 bg-black">
-          <motion.div
+          <m.div
             style={{ scale: imageScale }}
-            className="absolute inset-0 bg-[url('/images/backgrounds/alpine-night.jpg')] bg-cover bg-center grayscale"
+            className="alpine-night-bg absolute inset-0 bg-cover bg-center grayscale"
           />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_28%,rgba(0,0,0,.88)_100%)]" />
           <span className="absolute inset-[11%] rounded-full border border-white/16" />
@@ -47,7 +47,7 @@ export function ScopeStudy() {
             {t("magnification")}
           </span>
         </div>
-      </motion.div>
+      </m.div>
     </div>
   );
 }

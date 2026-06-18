@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -38,6 +38,7 @@ export function Navbar() {
         >
           <Link
             href="/"
+            prefetch={false}
             className="focus-ring flex items-center gap-3 rounded-full -my-2.5"
             aria-label="Mountain Fauna Lover"
           >
@@ -52,6 +53,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
+                prefetch={false}
                 className={cn(
                   "focus-ring rounded-md text-[0.64rem] font-medium tracking-[0.17em] text-white/58 uppercase transition hover:text-white",
                   pathname === item.href && "text-white",
@@ -87,7 +89,7 @@ export function Navbar() {
 
       <AnimatePresence>
         {open && (
-          <motion.div
+          <m.div
             id="mobile-navigation"
             initial={{ clipPath: "circle(0% at 92% 4%)" }}
             animate={{ clipPath: "circle(145% at 92% 4%)" }}
@@ -98,7 +100,7 @@ export function Navbar() {
             <div className="scope-grid absolute inset-0 opacity-35" />
             <div className="relative mx-auto flex w-full max-w-2xl flex-col">
               {navigation.map((item, index) => (
-                <motion.div
+                <m.div
                   key={item.href}
                   initial={{ opacity: 0, x: -24 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -107,6 +109,7 @@ export function Navbar() {
                 >
                   <Link
                     href={item.href}
+                    prefetch={false}
                     className="focus-ring flex items-center justify-between py-5 text-2xl font-light tracking-tight text-white sm:text-4xl"
                   >
                     {t(item.labelKey)}
@@ -114,10 +117,10 @@ export function Navbar() {
                       0{index + 1}
                     </span>
                   </Link>
-                </motion.div>
+                </m.div>
               ))}
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </>

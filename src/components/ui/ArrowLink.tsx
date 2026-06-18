@@ -15,6 +15,7 @@ export function ArrowLink({
   return (
     <Link
       href={href}
+      prefetch={false}
       data-cursor="magnetic"
       className={cn(
         "focus-ring group inline-flex items-center gap-3 rounded-full border border-white/18 bg-white/[0.035] px-5 py-3 text-[0.65rem] font-semibold tracking-[0.18em] text-white uppercase backdrop-blur-md transition hover:border-white/40 hover:bg-white/8",

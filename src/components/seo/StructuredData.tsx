@@ -17,7 +17,7 @@ export function StructuredData() {
         "@id": `${siteConfig.siteUrl}/#brand`,
         name: siteConfig.name,
         url: siteConfig.siteUrl,
-        logo: `${siteConfig.siteUrl}/logo/mountain-fauna-logo-v2.png`,
+        logo: `${siteConfig.siteUrl}/logo/mountain-fauna-logo-v2.webp`,
         founder: { "@id": `${siteConfig.siteUrl}/#founder` },
         sameAs: [socials.youtube, socials.instagram, socials.tiktok],
       },

@@ -117,12 +117,12 @@ The site runs without video or audio files. Missing optional media degrades to t
 
 | Asset                                                 | Current state                           |
 | ----------------------------------------------------- | --------------------------------------- |
-| `public/logo/mountain-fauna-logo.png`                 | Optimized official supplied logo        |
-| `public/logo/mountain-fauna-logo.svg`                 | Lightweight animated geometry companion |
+| `public/logo/mountain-fauna-logo-v2.webp`             | Lossless optimized official supplied logo |
+| `public/logo/mountain-fauna-icon-512.webp`            | Lightweight web app manifest icon       |
 | `public/images/founder/founder.jpeg`                  | Supplied founder portrait               |
-| `public/images/backgrounds/alpine-night.jpg`          | Generated replaceable hero still        |
-| `public/images/backgrounds/fog-mountain.jpg`          | Derived fog still                       |
-| `public/images/videos/video-01.jpg` to `video-09.jpg` | Replaceable placeholder thumbnails      |
+| `public/images/backgrounds/alpine-night.webp`         | Generated replaceable hero still        |
+| `public/images/backgrounds/fog-mountain.webp`         | Derived fog still                       |
+| YouTube thumbnail URLs in `src/config/videos.ts`      | Curated video card thumbnails           |
 | `public/images/og/og-image.jpg`                       | Replaceable Open Graph image            |
 | `public/videos/hero-fog.mp4`                          | Lightweight generated intro placeholder |
 | `public/videos/alpine-background.mp4`                 | Lightweight generated hero placeholder  |

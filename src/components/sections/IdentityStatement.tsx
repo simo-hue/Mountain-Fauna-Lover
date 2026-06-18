@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 import { FogLayer } from "../cinematic/FogLayer";
@@ -25,12 +25,12 @@ export function IdentityStatement() {
       className="relative overflow-hidden px-5 py-28 sm:px-8 sm:py-40"
     >
       <FogLayer strength="soft" />
-      <motion.div
+      <m.div
         style={{ y: markY, rotate: markRotate }}
         className="pointer-events-none absolute top-1/2 right-[-6rem] size-[24rem] -translate-y-1/2 opacity-[0.055] sm:right-[2%] sm:size-[38rem]"
       >
         <BrandMark className="size-full" />
-      </motion.div>
+      </m.div>
       <div className="relative mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_0.72fr] lg:items-end">
         <SectionHeading
           index="01"
@@ -38,7 +38,7 @@ export function IdentityStatement() {
           title={t("title")}
           description={t("description")}
         />
-        <motion.blockquote
+        <m.blockquote
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -46,7 +46,7 @@ export function IdentityStatement() {
           className="relative border-l border-white/20 pl-6 font-serif text-2xl leading-snug text-white/72 italic sm:text-3xl"
         >
           “{t("quote")}”
-        </motion.blockquote>
+        </m.blockquote>
       </div>
     </section>
   );

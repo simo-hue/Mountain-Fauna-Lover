@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 import { Link, usePathname } from "@/i18n/navigation";
@@ -13,10 +13,6 @@ export function CookieConsent() {
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const analyticsAvailable = Boolean(process.env.NEXT_PUBLIC_GA_ID);
-
-  if (pathname.endsWith("/link")) {
-    return null;
-  }
 
   useEffect(() => {
     if (!analyticsAvailable) return;
@@ -31,10 +27,14 @@ export function CookieConsent() {
     setVisible(false);
   };
 
+  if (pathname.endsWith("/link")) {
+    return null;
+  }
+
   return (
     <AnimatePresence>
       {visible && (
-        <motion.aside
+        <m.aside
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 16 }}
@@ -49,6 +49,7 @@ export function CookieConsent() {
                 {t("description")}{" "}
                 <Link
                   href="/cookies"
+                  prefetch={false}
                   className="focus-ring rounded-sm text-white underline decoration-white/30 underline-offset-4"
                 >
                   {t("link")}
@@ -73,7 +74,7 @@ export function CookieConsent() {
               </button>
             </div>
           </div>
-        </motion.aside>
+        </m.aside>
       )}
     </AnimatePresence>
   );

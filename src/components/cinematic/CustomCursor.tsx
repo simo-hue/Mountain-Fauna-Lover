@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Bike, Crosshair, Play, Scan } from "lucide-react";
 
 type CursorMode =
@@ -76,7 +76,7 @@ export function CustomCursor() {
       className="custom-cursor pointer-events-none fixed top-0 left-0 z-[200] -translate-x-1/2 -translate-y-1/2 text-white mix-blend-difference"
       aria-hidden="true"
     >
-      <motion.div
+      <m.div
         animate={{
           width: mode === "lens" ? 62 : active ? 42 : 26,
           height: mode === "lens" ? 62 : active ? 42 : 26,
@@ -88,7 +88,7 @@ export function CustomCursor() {
         className="grid place-items-center rounded-full border bg-black/5 backdrop-blur-[1px]"
       >
         {icon}
-      </motion.div>
+      </m.div>
     </div>
   );
 }

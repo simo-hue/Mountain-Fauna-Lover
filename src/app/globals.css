@@ -80,6 +80,10 @@ a {
     100% 100%;
 }
 
+.alpine-night-bg {
+  background-image: url("/images/backgrounds/alpine-night.webp");
+}
+
 .noise::after {
   content: "";
   position: absolute;
@@ -126,6 +130,36 @@ a {
   filter: contrast(1.07) brightness(1.18) saturate(0.72);
 }
 
+.mountain-wireframe-scene {
+  filter: drop-shadow(0 24px 80px rgba(216, 229, 234, 0.05));
+}
+
+.mountain-wireframe-float {
+  animation: mountain-wireframe-float 9s ease-in-out infinite alternate;
+}
+
+.mountain-wireframe-ridge {
+  stroke-width: 1.15;
+}
+
+.mountain-wireframe-ridge-left {
+  opacity: 0.64;
+  transform: translate3d(-24px, 18px, 0) rotate(2deg);
+  transform-origin: 50% 50%;
+}
+
+.mountain-wireframe-ridge-center {
+  opacity: 0.9;
+  transform: translate3d(0, 0, 0) rotate(-1deg);
+  transform-origin: 58% 50%;
+}
+
+.mountain-wireframe-ridge-right {
+  opacity: 0.58;
+  transform: translate3d(20px, 32px, 0) rotate(-4deg);
+  transform-origin: 72% 50%;
+}
+
 @keyframes fog-drift {
   from {
     transform: translate3d(-8%, -4%, 0) scale(0.92);
@@ -153,6 +187,16 @@ a {
   }
   100% {
     transform: translate3d(-12px, 115vh, 0);
+  }
+}
+
+@keyframes mountain-wireframe-float {
+  from {
+    transform: translate3d(0, -7px, 0) rotate(-0.8deg) scale(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 9px, 0) rotate(0.8deg) scale(1.005);
   }
 }
 

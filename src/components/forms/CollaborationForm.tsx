@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight, Check, LoaderCircle, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import Image from "next/image";
 
 import { Link } from "@/i18n/navigation";
@@ -17,6 +17,7 @@ import {
 import { cn } from "@/lib/utils";
 
 type SubmissionState = "idle" | "success" | "error" | "notConfigured";
+type CollaborationFormTranslator = ReturnType<typeof useTranslations>;
 
 export function CollaborationForm() {
   const t = useTranslations("collaboration.form");
@@ -178,6 +179,7 @@ export function CollaborationForm() {
             {t("privacyPrefix")}{" "}
             <Link
               href="/privacy"
+              prefetch={false}
               className="focus-ring rounded-sm text-white underline underline-offset-4"
             >
               {t("privacyLink")}
@@ -226,7 +228,15 @@ export function CollaborationForm() {
   );
 }
 
-function SuccessModal({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => void; t: any }) {
+function SuccessModal({
+  isOpen,
+  onClose,
+  t,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+  t: CollaborationFormTranslator;
+}) {
   const closeRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -249,7 +259,7 @@ function SuccessModal({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => 
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -261,7 +271,7 @@ function SuccessModal({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => 
             if (event.target === event.currentTarget) onClose();
           }}
         >
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.92, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.94, y: 16 }}
@@ -279,7 +289,7 @@ function SuccessModal({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => 
             </button>
             <div className="mx-auto mb-8 flex h-10 items-center justify-center">
               <Image
-                src="/logo/mountain-fauna-logo-v2.png"
+                src="/logo/mountain-fauna-logo-v2.webp"
                 alt="Mountain Fauna Logo"
                 width={150}
                 height={40}
@@ -292,8 +302,8 @@ function SuccessModal({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => 
             <p className="mt-4 text-sm leading-6 text-white/52">
               {t("successModal.description")}
             </p>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

@@ -54,7 +54,7 @@ export default async function LinkPage({
     { label: t("tiktok"), url: "https://www.tiktok.com/@mountainfaunalover", external: true, Icon: TiktokIcon },
     { label: t("youtube"), url: "https://www.youtube.com/@mountainfaunalover", external: true, Icon: YoutubeIcon },
     { label: t("website"), url: "/", external: false, Icon: Globe },
-  ];
+  ] as const;
 
   return (
     <main className="fixed inset-0 h-[100dvh] w-[100vw] flex flex-col items-center justify-center px-6 overflow-hidden bg-[#030303] selection:bg-[#bee9ff]/20">
@@ -73,7 +73,7 @@ export default async function LinkPage({
             {/* Logo Glow */}
             <div className="absolute inset-4 bg-white rounded-full filter blur-2xl opacity-[0.06]" />
             <Image
-              src="/logo/mountain-fauna-logo-v2.png"
+              src="/logo/mountain-fauna-logo-v2.webp"
               alt="Mountain Fauna Lover Logo"
               width={400}
               height={400}
@@ -124,7 +124,12 @@ export default async function LinkPage({
             }
 
             return (
-              <Link key={i} href={link.url as any} className={className}>
+              <Link
+                key={i}
+                href={link.url}
+                prefetch={false}
+                className={className}
+              >
                 {content}
               </Link>
             );

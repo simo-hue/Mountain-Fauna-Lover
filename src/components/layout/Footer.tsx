@@ -37,12 +37,14 @@ export function Footer() {
           <Link
             className="focus-ring rounded-sm transition hover:text-white"
             href="/privacy"
+            prefetch={false}
           >
             {t("privacy")}
           </Link>
           <Link
             className="focus-ring rounded-sm transition hover:text-white"
             href="/cookies"
+            prefetch={false}
           >
             {t("cookies")}
           </Link>

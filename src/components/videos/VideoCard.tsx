@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Play } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -19,7 +19,7 @@ export function VideoCard({
   const t = useTranslations("videos");
 
   return (
-    <motion.button
+    <m.button
       type="button"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -57,6 +57,6 @@ export function VideoCard({
           {t(video.descriptionKey)}
         </span>
       </span>
-    </motion.button>
+    </m.button>
   );
 }

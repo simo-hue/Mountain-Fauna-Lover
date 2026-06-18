@@ -1,7 +1,6 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -9,19 +8,16 @@ import { socials } from "@/config/socials";
 
 import { AmbientSoundToggle } from "../cinematic/AmbientSoundToggle";
 import { FogLayer } from "../cinematic/FogLayer";
+import MountainScene3D from "../cinematic/MountainScene3D";
 import { ObservationLens } from "../cinematic/ObservationLens";
 import { SnowParticles } from "../cinematic/SnowParticles";
-
-const MountainScene3D = dynamic(() => import("../cinematic/MountainScene3D"), {
-  ssr: false,
-});
 
 export function HeroSection() {
   const t = useTranslations("home");
 
   return (
     <section className="noise relative min-h-[100svh] overflow-hidden bg-black">
-      <div className="absolute inset-0 scale-[1.03] bg-[url('/images/backgrounds/alpine-night.jpg')] bg-cover bg-center" />
+      <div className="alpine-night-bg absolute inset-0 scale-[1.03] bg-cover bg-center" />
       <video
         className="absolute inset-0 hidden size-full object-cover opacity-70 motion-reduce:hidden md:block"
         autoPlay
@@ -29,7 +25,7 @@ export function HeroSection() {
         loop
         playsInline
         preload="metadata"
-        poster="/images/backgrounds/alpine-night.jpg"
+        poster="/images/backgrounds/alpine-night.webp"
         aria-hidden="true"
       >
         <source src="/videos/alpine-background.mp4" type="video/mp4" />
@@ -45,7 +41,7 @@ export function HeroSection() {
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-[94rem] flex-col justify-end px-5 pt-32 pb-20 sm:px-8 sm:pb-16 lg:justify-center lg:px-12">
         <div className="max-w-4xl">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -56,9 +52,9 @@ export function HeroSection() {
             <span className="font-mono text-[0.55rem] tracking-[0.15em] text-white/32">
               46.40° N / 10.67° E
             </span>
-          </motion.div>
+          </m.div>
 
-          <motion.h1
+          <m.h1
             initial={{ opacity: 0, y: 34, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{
@@ -69,18 +65,18 @@ export function HeroSection() {
             className="max-w-[15ch] text-[clamp(3rem,7.4vw,7.8rem)] leading-[0.9] font-light tracking-[-0.065em] text-balance text-white"
           >
             {t("hero.title")}
-          </motion.h1>
+          </m.h1>
 
-          <motion.p
+          <m.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
             className="mt-7 max-w-2xl text-sm leading-7 text-white/58 sm:text-base"
           >
             {t("hero.description")}
-          </motion.p>
+          </m.p>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.05, duration: 0.8 }}
@@ -104,7 +100,7 @@ export function HeroSection() {
             >
               {t("hero.instagram")}
             </a>
-          </motion.div>
+          </m.div>
         </div>
 
         <div className="absolute right-5 bottom-6 left-5 flex items-end justify-between sm:right-8 sm:left-8 lg:right-12 lg:left-12">

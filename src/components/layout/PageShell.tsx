@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
 import { CustomCursor } from "../cinematic/CustomCursor";
+import { MotionProvider } from "../motion/MotionProvider";
 import { CookieConsent } from "./CookieConsent";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
@@ -17,11 +18,13 @@ export function PageShell({ children }: { children: ReactNode }) {
       >
         {t("skip")}
       </a>
-      <CustomCursor />
-      <Navbar />
-      <main id="main-content">{children}</main>
-      <Footer />
-      <CookieConsent />
+      <MotionProvider>
+        <CustomCursor />
+        <Navbar />
+        <main id="main-content">{children}</main>
+        <Footer />
+        <CookieConsent />
+      </MotionProvider>
     </div>
   );
 }

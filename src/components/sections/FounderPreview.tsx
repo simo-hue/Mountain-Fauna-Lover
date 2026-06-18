@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 import { ArrowLink } from "../ui/ArrowLink";
@@ -13,7 +13,7 @@ export function FounderPreview() {
   return (
     <section className="border-y border-white/8 bg-[#070707] px-5 py-28 sm:px-8 sm:py-36">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, x: -24 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -33,7 +33,7 @@ export function FounderPreview() {
             <span>{t("placeholder")}</span>
             <span>Trentino-Alto Adige</span>
           </div>
-        </motion.div>
+        </m.div>
         <div className="lg:pl-12">
           <SectionHeading
             index="04"

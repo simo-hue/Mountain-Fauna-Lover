@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
-  motion,
+  m,
   useMotionValue,
   useReducedMotion,
   useSpring,
@@ -50,7 +50,7 @@ export function ObservationLens() {
       onPointerLeave={() => setActive(false)}
       aria-hidden="true"
     >
-      <motion.div
+      <m.div
         style={{
           x: springX,
           y: springY,
@@ -59,7 +59,7 @@ export function ObservationLens() {
         }}
         animate={{ opacity: active ? 1 : 0.74, scale: active ? 1 : 0.92 }}
         transition={{ duration: 0.35 }}
-        className="observation-lens absolute top-0 left-0 hidden size-64 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border border-white/45 bg-[url('/images/backgrounds/alpine-night.jpg')] bg-[length:100vw_100vh] bg-no-repeat shadow-[0_0_0_10px_rgba(255,255,255,0.025),0_30px_100px_rgba(0,0,0,0.8)] lg:block"
+        className="observation-lens alpine-night-bg absolute top-0 left-0 hidden size-64 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border border-white/45 bg-[length:100vw_100vh] bg-no-repeat shadow-[0_0_0_10px_rgba(255,255,255,0.025),0_30px_100px_rgba(0,0,0,0.8)] lg:block"
       >
         <span className="absolute inset-3 rounded-full border border-white/20" />
         <span className="absolute top-1/2 right-0 left-0 h-px bg-white/30" />
@@ -68,7 +68,7 @@ export function ObservationLens() {
         <span className="absolute right-7 bottom-5 font-mono text-[0.5rem] tracking-[0.15em] text-white/60">
           60× / REC
         </span>
-      </motion.div>
+      </m.div>
       <div className="absolute top-[52%] left-[68%] grid size-44 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-white/25 bg-black/10 shadow-[0_0_60px_rgba(255,255,255,0.06)] lg:hidden">
         <span className="absolute inset-3 rounded-full border border-white/10" />
         <span className="h-px w-full bg-white/20" />

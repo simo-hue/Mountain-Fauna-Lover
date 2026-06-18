@@ -157,3 +157,11 @@
 - [2026-06-16 23:25:00]: Next.js Middleware Deprecation Ghost Warning Fix
   - *Details*: Resolved a lingering Next.js 16 warning (`The "middleware" file convention is deprecated`) that continued to appear in the terminal after migrating to `proxy.ts`. The issue was caused by an aggressive `.next` cache retaining old routing entries.
   - *Tech Notes*: Verified `src/proxy.ts` integration. Forcefully cleared the `.next` build cache directory (`rm -rf .next`). Appended a prompt in `TO_SIMO_DO.md` to manually restart the dev server to rebuild the routing tree without the ghost warnings.
+
+- [2026-06-18 08:53:49 CEST]: Website Performance Optimization
+  - *Details*: Audited the production home page and reduced avoidable runtime weight while preserving the visible cinematic design. Replaced the decorative React Three/Fiber mountain canvas with a lightweight SVG/CSS wireframe, switched decorative background/poster assets to WebP, disabled non-critical internal link prefetching, and fixed lint issues surfaced during verification.
+  - *Tech Notes*: Removed unused `@react-three/drei`, `@react-three/fiber`, `three`, and `@types/three` dependencies. Added `public/images/backgrounds/alpine-night.webp` and `public/images/backgrounds/fog-mountain.webp`. Verified `npm run lint`, `npm run typecheck`, `npm run build`, and a production Chrome network/screenshot pass on `http://localhost:3000/it`.
+
+- [2026-06-18 14:02:12 CEST]: Second-Pass Website Weight Optimization
+  - *Details*: Reduced remaining runtime and asset weight without changing the visible page composition. Switched Framer Motion components to `LazyMotion`/`m` so animation features are loaded more narrowly, converted the visible logo source to a lossless WebP, added a smaller dedicated web app manifest icon, and removed unused public placeholder images.
+  - *Tech Notes*: Added `src/components/motion/MotionProvider.tsx`; updated motion imports across client components; added `public/logo/mountain-fauna-logo-v2.webp` and `public/logo/mountain-fauna-icon-512.webp`; removed unused JPG background fallbacks, local video thumbnail placeholders, and the oversized PNG logo. Verified `npm run lint`, `npm run typecheck`, `npm run build`, and a fresh-profile Chrome network/screenshot capture on `http://127.0.0.1:3000/it`.

@@ -12,9 +12,9 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#030303",
     icons: [
       {
-        src: "/logo/mountain-fauna-logo-v2.png",
-        sizes: "800x800",
-        type: "image/png",
+        src: "/logo/mountain-fauna-icon-512.webp",
+        sizes: "512x512",
+        type: "image/webp",
       },
     ],
   };

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   Aperture,
   Bike,
@@ -38,7 +38,7 @@ export function GearPreview() {
           {gearItems.map((item, index) => {
             const Icon = icons[index];
             return (
-              <motion.div
+              <m.div
                 key={item.id}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -59,7 +59,7 @@ export function GearPreview() {
                 <p className="mt-3 text-sm leading-6 text-white/40">
                   {t(`gear.${item.descriptionKey}`)}
                 </p>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

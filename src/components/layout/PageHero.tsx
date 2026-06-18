@@ -21,7 +21,7 @@ export function PageHero({
         compact ? "pb-20 sm:pb-24" : "pb-28 sm:pb-36"
       }`}
     >
-      <div className="absolute inset-0 bg-[url('/images/backgrounds/alpine-night.jpg')] bg-cover bg-center opacity-28" />
+      <div className="alpine-night-bg absolute inset-0 bg-cover bg-center opacity-28" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-[#030303]/70 to-[#030303]" />
       <div className="scope-grid absolute inset-0 opacity-20" />
       <FogLayer strength="soft" />

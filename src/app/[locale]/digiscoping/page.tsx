@@ -88,7 +88,7 @@ export default async function DigiscopingPage({
       </section>
 
       <section className="relative overflow-hidden border-y border-white/8 bg-[#070707] px-5 py-28 sm:px-8 sm:py-40">
-        <div className="absolute inset-0 bg-[url('/images/backgrounds/fog-mountain.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/backgrounds/fog-mountain.webp')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative mx-auto max-w-7xl">
           <p className="eyebrow">{t("respect.eyebrow")}</p>

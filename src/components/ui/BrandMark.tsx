@@ -5,7 +5,7 @@ export function BrandMark({ className }: { className?: string }) {
   return (
     <div className={cn("relative overflow-hidden rounded-full", className)}>
       <Image
-        src="/logo/mountain-fauna-logo-v2.png"
+        src="/logo/mountain-fauna-logo-v2.webp"
         alt="Mountain Fauna Logo"
         fill
         className="object-contain"
