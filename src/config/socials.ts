@@ -1,5 +1,9 @@
 export const socials = {
   youtube: "https://www.youtube.com/@mountainfaunalover",
+  // Permanent channel-ID URL — more durable than the @handle for entity binding.
+  youtubeChannel:
+    "https://www.youtube.com/channel/UCRJjOhCK-bv6DzMCMaGPbiw",
+  youtubeChannelId: "UCRJjOhCK-bv6DzMCMaGPbiw",
   instagram: "https://www.instagram.com/mountainfaunalover",
   tiktok: "https://www.tiktok.com/@mountainfaunalover",
   linkedin: "https://www.linkedin.com/in/simonemattioli2003/",

@@ -25,6 +25,7 @@ const TiktokIcon = ({ className, strokeWidth }: { className?: string, strokeWidt
 
 import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
+import { siteConfig } from "@/config/site";
 
 export async function generateMetadata({
   params,
@@ -34,9 +35,13 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.links" });
 
+  // Standalone bio page that duplicates /links — keep it out of the index and
+  // point its canonical at the indexable /links route.
   return {
     title: `${t("title")}`,
     description: t("description"),
+    robots: { index: false, follow: true },
+    alternates: { canonical: `${siteConfig.siteUrl}/${locale}/links` },
   };
 }
 

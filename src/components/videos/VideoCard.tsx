@@ -32,8 +32,9 @@ export function VideoCard({
     >
       <Image
         src={video.thumbnail}
-        alt=""
+        alt={t(video.titleKey)}
         fill
+        priority={index === 0}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover transition duration-[1400ms] group-hover:scale-[1.06] group-focus-visible:scale-[1.06]"
         style={{ objectPosition: `${45 + (index % 3) * 10}% center` }}

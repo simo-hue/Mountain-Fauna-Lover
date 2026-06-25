@@ -28,6 +28,8 @@ export function createPageMetadata({
       languages: {
         en: `${siteConfig.siteUrl}/en${path}`,
         it: `${siteConfig.siteUrl}/it${path}`,
+        // Italian is the primary entity language; it is the x-default fallback.
+        "x-default": `${siteConfig.siteUrl}/it${path}`,
       },
     },
     openGraph: {
@@ -36,6 +38,7 @@ export function createPageMetadata({
       url: canonical,
       siteName: siteConfig.name,
       locale: locale === "it" ? "it_IT" : "en_US",
+      alternateLocale: locale === "it" ? ["en_US"] : ["it_IT"],
       type: "website",
       images: [
         {

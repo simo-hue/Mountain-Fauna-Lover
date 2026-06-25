@@ -25,4 +25,50 @@ Before production launch:
 - [ ] test responsiveness da mobile;
 - [ ] A linktree like page for my useful links;
 - [ ] tradurre nuovo copy IT -> ENG;
-- [ ] OTTIMIZZAZIONE GEO e SEO;
+
+---
+
+## SEO / GEO — Owner Actions (off-site, only you can do these)
+
+The on-site work is done and verified (schema, FAQ, breadcrumbs, llms.txt, robots,
+sitemap, metadata, Core Web Vitals). These remaining steps need account access.
+
+### 1. Search Console (measurement backbone — do this first)
+- [ ] Create a **Google Search Console** property for `https://mountainfaunalover.vercel.app`
+      (https://search.google.com/search-console). Verify it, then submit the sitemap:
+      `https://mountainfaunalover.vercel.app/sitemap.xml`.
+- [ ] Create a **Bing Webmaster Tools** account (https://www.bing.com/webmasters) — it
+      feeds ChatGPT Search and Copilot. You can import the property from Google. Submit the
+      same sitemap.
+- [x] ~~Send me the verification codes~~ — **DONE**: both Google
+      (`google-site-verification`) and Bing (`msvalidate.01`) tags are wired into
+      `src/app/layout.tsx` and render site-wide.
+- [ ] **Remaining:** deploy to production, then click **Verify** in both Google Search
+      Console and Bing Webmaster Tools, and **submit the sitemap**
+      (`https://mountainfaunalover.vercel.app/sitemap.xml`) in each.
+
+### 2. Social profile consistency + sameAs (biggest entity signal, cheap)
+- [ ] Use the **exact same display name** on every channel. Your YouTube channel currently
+      shows **"Mountain & Fauna Lover"** (with `&`) while the brand is **"Mountain Fauna
+      Lover"**. Pick one and align YouTube, Instagram, TikTok, LinkedIn to it.
+- [ ] Put the website URL in **every** profile's bio/links field.
+- [ ] Confirm the exact profile URLs so I can finalise the `sameAs` graph in
+      `src/components/seo/StructuredData.tsx` / `src/lib/schema.ts`.
+
+### 3. Wikidata item (knowledge-graph / LLM entity record)
+- [ ] Create an account at https://www.wikidata.org and add a new item:
+      - Label: `Mountain Fauna Lover` · Description (it): `progetto di osservazione della
+        fauna alpina e digiscoping di Mattioli Simone`.
+      - Statements: `instance of (P31)` → website/creator; `country (P17)` → Italy;
+        `located in (P131)` → Trentino-Alto Adige; `official website (P856)` → the site URL;
+        `YouTube channel ID (P2397)` → `UCRJjOhCK-bv6DzMCMaGPbiw`, plus Instagram/TikTok IDs;
+        `inception (P571)` → `2022-07-28`.
+- [ ] Send me the Wikidata Q-ID so I can add it to the entity `sameAs`.
+
+### 5. Video metadata (unlocks video rich results)
+- [ ] In `src/config/videos.ts`, fill the real `uploadDate` (`YYYY-MM-DD`) and `duration`
+      (`PT#M#S`) for each of the 9 videos. The `VideoObject` schema is already wired; Google
+      requires `uploadDate` to show video rich results, so these are currently emitted without
+      it.
+- [ ] **Data bug to fix:** `video-01` and `video-04` both point to the same YouTube ID
+      (`wQrx2422wD8`). Give me the correct ID for one of them.

@@ -3,10 +3,14 @@ import { ArrowUpRight, Binoculars, Code2, MountainSnow } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { FaqSection } from "@/components/seo/FaqSection";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { socials } from "@/config/socials";
 import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
+import { buildPageSeo } from "@/lib/page-seo";
 
 export async function generateMetadata({
   params,
@@ -32,6 +36,14 @@ export default async function FounderPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("founder");
+  const { graph, trail } = await buildPageSeo({
+    locale,
+    path: "/founder",
+    metaNamespace: "metadata.founder",
+    labelKey: "nav.founder",
+    faqNamespace: "faq.founder",
+    isProfile: true,
+  });
   const pillars = [
     { icon: Binoculars, key: "observation" },
     { icon: MountainSnow, key: "mountain" },
@@ -40,11 +52,13 @@ export default async function FounderPage({
 
   return (
     <>
+      <JsonLd data={graph} />
       <PageHero
         code="FIELD / MS"
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
+        breadcrumb={<Breadcrumbs trail={trail} />}
       />
 
       <section className="px-5 py-24 sm:px-8 sm:py-36">
@@ -119,6 +133,8 @@ export default async function FounderPage({
           </div>
         </div>
       </section>
+
+      <FaqSection locale={locale} namespace="faq.founder" />
     </>
   );
 }

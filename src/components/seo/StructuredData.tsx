@@ -1,55 +1,30 @@
-import { siteConfig } from "@/config/site";
-import { socials } from "@/config/socials";
+import { getTranslations } from "next-intl/server";
 
-export function StructuredData() {
-  const data = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${siteConfig.siteUrl}/#website`,
-        url: siteConfig.siteUrl,
-        name: siteConfig.name,
-        inLanguage: ["en", "it"],
-      },
-      {
-        "@type": ["Organization", "Brand"],
-        "@id": `${siteConfig.siteUrl}/#brand`,
-        name: siteConfig.name,
-        url: siteConfig.siteUrl,
-        logo: `${siteConfig.siteUrl}/logo/mountain-fauna-logo-v2.webp`,
-        founder: { "@id": `${siteConfig.siteUrl}/#founder` },
-        sameAs: [socials.youtube, socials.instagram, socials.tiktok],
-      },
-      {
-        "@type": "Person",
-        "@id": `${siteConfig.siteUrl}/#founder`,
-        name: siteConfig.founder,
-        image: `${siteConfig.siteUrl}/images/founder/founder.jpeg`,
-        homeLocation: {
-          "@type": "AdministrativeArea",
-          name: "Trentino-Alto Adige",
-        },
-        url: `${siteConfig.siteUrl}/en/founder`,
-        sameAs: [socials.linkedin],
-        knowsAbout: [
-          "Wildlife observation",
-          "Digiscoping",
-          "Alpine exploration",
-          "Skiing",
-          "E-bike",
-          "Cinematic video",
-        ],
-      },
-    ],
-  };
+import type { AppLocale } from "@/i18n/routing";
+import { pageGraph, type FaqItem } from "@/lib/schema";
+
+import { JsonLd } from "./JsonLd";
+
+/**
+ * Home-page JSON-LD: the full entity graph (WebSite + Organization/Brand +
+ * Person + Places) plus the WebPage and the home FAQ, anchored in the active
+ * locale. Reads the same message keys the visible FAQ renders, so they stay in
+ * sync without prop threading.
+ */
+export async function StructuredData({ locale }: { locale: AppLocale }) {
+  const tMeta = await getTranslations({ locale, namespace: "metadata.home" });
+  const tFaq = await getTranslations({ locale, namespace: "faq.home" });
+  const faqItems = tFaq.raw("items") as FaqItem[];
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
-      }}
+    <JsonLd
+      data={pageGraph({
+        locale,
+        path: "",
+        title: tMeta("title"),
+        description: tMeta("description"),
+        faqItems,
+      })}
     />
   );
 }

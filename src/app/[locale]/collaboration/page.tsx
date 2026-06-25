@@ -10,9 +10,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { CollaborationForm } from "@/components/forms/CollaborationForm";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { FaqSection } from "@/components/seo/FaqSection";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/config/site";
 import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
+import { buildPageSeo } from "@/lib/page-seo";
 import { collaborationTypes } from "@/lib/validations";
 
 const icons = [
@@ -51,14 +55,23 @@ export default async function CollaborationPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("collaboration");
+  const { graph, trail } = await buildPageSeo({
+    locale,
+    path: "/collaboration",
+    metaNamespace: "metadata.collaboration",
+    labelKey: "nav.collaboration",
+    faqNamespace: "faq.collaboration",
+  });
 
   return (
     <>
+      <JsonLd data={graph} />
       <PageHero
         code="OPEN / SELECTED"
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
+        breadcrumb={<Breadcrumbs trail={trail} />}
       />
 
       <section className="px-5 py-20 sm:px-8 sm:py-28">
@@ -115,6 +128,8 @@ export default async function CollaborationPage({
           <CollaborationForm />
         </div>
       </section>
+
+      <FaqSection locale={locale} namespace="faq.collaboration" />
     </>
   );
 }

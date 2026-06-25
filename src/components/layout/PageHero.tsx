@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { FogLayer } from "../cinematic/FogLayer";
 import { SnowParticles } from "../cinematic/SnowParticles";
 import { BrandMark } from "../ui/BrandMark";
@@ -8,12 +10,14 @@ export function PageHero({
   description,
   code,
   compact = false,
+  breadcrumb,
 }: {
   eyebrow: string;
   title: string;
   description: string;
   code: string;
   compact?: boolean;
+  breadcrumb?: ReactNode;
 }) {
   return (
     <section
@@ -28,6 +32,7 @@ export function PageHero({
       <SnowParticles />
       <BrandMark className="absolute right-4 bottom-4 size-16 opacity-30 sm:right-8 sm:bottom-8 sm:size-24" />
       <div className="relative mx-auto max-w-7xl">
+        {breadcrumb}
         <div className="mb-7 flex items-center gap-3">
           <span className="font-mono text-[0.58rem] text-white/30">{code}</span>
           <span className="eyebrow !text-white/60">{eyebrow}</span>

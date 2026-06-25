@@ -43,6 +43,13 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "vaX85JUOj5liB0cYr88FW_xfLqmWiL0oi734QkgP0D4",
+    // Bing Webmaster Tools.
+    other: {
+      "msvalidate.01": "55E98042DC86F29F9660459CF15D130F",
+    },
+  },
   icons: {
     icon: "/favicon.ico",
   },
@@ -67,6 +74,15 @@ export default async function RootLayout({
       className={`${geist.variable} ${cormorant.variable}`}
     >
       <body>
+        {/* Resource hints — YouTube thumbnail CDN powers the video cards, and the
+            alpine hero still is the LCP element on the home and section heroes. */}
+        <link rel="preconnect" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/backgrounds/alpine-night.webp"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `

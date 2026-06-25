@@ -1,9 +1,12 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { LegalDocument } from "@/components/ui/LegalDocument";
 import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
+import { buildPageSeo } from "@/lib/page-seo";
 
 export async function generateMetadata({
   params,
@@ -28,6 +31,12 @@ export default async function CookiesPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("cookies");
+  const { graph, trail } = await buildPageSeo({
+    locale,
+    path: "/cookies",
+    metaNamespace: "metadata.cookies",
+    labelKey: "footer.cookies",
+  });
   const keys = [
     "essential",
     "language",
@@ -38,12 +47,14 @@ export default async function CookiesPage({
 
   return (
     <>
+      <JsonLd data={graph} />
       <PageHero
         code="LEGAL / 02"
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
         compact
+        breadcrumb={<Breadcrumbs trail={trail} />}
       />
       <LegalDocument
         updated={t("updated")}

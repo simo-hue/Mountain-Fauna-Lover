@@ -9,10 +9,13 @@ import {
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/config/site";
 import { socials } from "@/config/socials";
 import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
+import { buildPageSeo } from "@/lib/page-seo";
 
 const links = [
   { id: "youtube", href: socials.youtube, icon: Play, size: "large" },
@@ -56,15 +59,23 @@ export default async function LinksPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("links");
+  const { graph, trail } = await buildPageSeo({
+    locale,
+    path: "/links",
+    metaNamespace: "metadata.links",
+    labelKey: "nav.links",
+  });
 
   return (
     <>
+      <JsonLd data={graph} />
       <PageHero
         code="SIGNAL / LIVE"
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
         compact
+        breadcrumb={<Breadcrumbs trail={trail} />}
       />
       <section className="px-5 py-20 sm:px-8 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-2">

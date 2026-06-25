@@ -496,5 +496,90 @@
         "description": "The digital darkroom where field recordings become cinematic alpine stories."
       }
     }
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "faq": {
+    "home": {
+      "eyebrow": "Frequently asked",
+      "title": "Questions about the project.",
+      "items": [
+        {
+          "q": "What is Mountain Fauna Lover?",
+          "a": "Mountain Fauna Lover is the project of Mattioli Simone, a mountain and wildlife enthusiast from Trentino-Alto Adige who documents alpine nature through digiscoping, skiing, e-bike adventures and cinematic video."
+        },
+        {
+          "q": "Where are the videos filmed?",
+          "a": "Between Val di Rabbi and Stelvio National Park, in the heart of Trentino-Alto Adige."
+        },
+        {
+          "q": "What is digiscoping?",
+          "a": "The art of filming or photographing through a spotting scope, to observe wildlife from a distance with patience and respect, without disturbing it."
+        },
+        {
+          "q": "Where can I follow Mountain Fauna Lover?",
+          "a": "On YouTube, Instagram and TikTok. All channels are gathered on the Links page."
+        }
+      ]
+    },
+    "digiscoping": {
+      "eyebrow": "Digiscoping questions",
+      "title": "Understanding observation at a distance.",
+      "items": [
+        {
+          "q": "What does digiscoping mean?",
+          "a": "Filming or photographing through a spotting scope: magnification replaces physical approach, so the animal stays undisturbed in its own world."
+        },
+        {
+          "q": "Does digiscoping disturb animals?",
+          "a": "No. The rule is respect before the shot: no call, chase or forced encounter. You record what is freely visible and leave quietly."
+        },
+        {
+          "q": "What gear do you use for digiscoping?",
+          "a": "A Swarovski ATX 115mm spotting scope with NL Pure 14x52, and an iPhone connected through an OLLIN magnetic adapter on a stable tripod."
+        },
+        {
+          "q": "From how far do you observe wildlife?",
+          "a": "From a long distance, with magnification up to 60×, so an animal's behaviour is never altered."
+        }
+      ]
+    },
+    "collaboration": {
+      "eyebrow": "Collaboration questions",
+      "title": "Working together, clearly.",
+      "items": [
+        {
+          "q": "Who does Mountain Fauna Lover collaborate with?",
+          "a": "Outdoor and mountain brands, tourism boards and territories, wildlife and nature projects, technical gear makers, and ski and e-bike experiences."
+        },
+        {
+          "q": "How can I propose a collaboration?",
+          "a": "Through the form on the Collaboration page or by direct email. Every request is read personally."
+        },
+        {
+          "q": "Which areas do you work in?",
+          "a": "Mainly Val di Rabbi, Stelvio National Park and across Trentino-Alto Adige."
+        }
+      ]
+    },
+    "founder": {
+      "eyebrow": "About the founder",
+      "title": "Who is behind the lens.",
+      "items": [
+        {
+          "q": "Who is Mattioli Simone?",
+          "a": "The founder of Mountain Fauna Lover: a mountain observer, wildlife enthusiast and filmmaker from Trentino-Alto Adige."
+        },
+        {
+          "q": "Where is he from?",
+          "a": "From Trentino-Alto Adige, where he documents alpine nature between Val di Rabbi and Stelvio National Park."
+        },
+        {
+          "q": "What does he do beyond the mountains?",
+          "a": "He is also a software developer, combining nature, technology and creativity with the same precision he brings to the mountains."
+        }
+      ]
+    }
   }
 }

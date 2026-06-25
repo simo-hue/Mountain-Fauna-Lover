@@ -3,9 +3,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { ScopeStudy } from "@/components/cinematic/ScopeStudy";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { FaqSection } from "@/components/seo/FaqSection";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
+import { buildPageSeo } from "@/lib/page-seo";
 
 export async function generateMetadata({
   params,
@@ -34,6 +38,13 @@ export default async function DigiscopingPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("digiscoping");
+  const { graph, trail } = await buildPageSeo({
+    locale,
+    path: "/digiscoping",
+    metaNamespace: "metadata.digiscoping",
+    labelKey: "nav.digiscoping",
+    faqNamespace: "faq.digiscoping",
+  });
   const principles = [
     { icon: Eye, key: "distance" },
     { icon: Pause, key: "patience" },
@@ -42,11 +53,13 @@ export default async function DigiscopingPage({
 
   return (
     <>
+      <JsonLd data={graph} />
       <PageHero
         code="OPTICS / 60×"
         eyebrow={t("eyebrow")}
         title={t("title")}
         description={t("description")}
+        breadcrumb={<Breadcrumbs trail={trail} />}
       />
 
       <section className="px-5 py-24 sm:px-8 sm:py-36">
@@ -103,6 +116,8 @@ export default async function DigiscopingPage({
           </ArrowLink>
         </div>
       </section>
+
+      <FaqSection locale={locale} namespace="faq.digiscoping" />
     </>
   );
 }

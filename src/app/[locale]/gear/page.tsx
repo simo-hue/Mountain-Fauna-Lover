@@ -9,9 +9,12 @@ import {
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { gearItems } from "@/config/gear";
 import type { AppLocale } from "@/i18n/routing";
 import { createPageMetadata } from "@/lib/metadata";
+import { buildPageSeo } from "@/lib/page-seo";
 
 const icons = [Telescope, Camera, Aperture, MountainSnow, Bike, WandSparkles];
 
@@ -39,14 +42,22 @@ export default async function GearPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
+  const { graph, trail } = await buildPageSeo({
+    locale,
+    path: "/gear",
+    metaNamespace: "metadata.gear",
+    labelKey: "nav.gear",
+  });
 
   return (
     <>
+      <JsonLd data={graph} />
       <PageHero
         code="KIT / FIELD"
         eyebrow={t("gear.page.eyebrow")}
         title={t("gear.page.title")}
         description={t("gear.page.description")}
+        breadcrumb={<Breadcrumbs trail={trail} />}
       />
       <section className="px-5 py-20 sm:px-8 sm:py-28">
         <div className="mx-auto max-w-7xl">
