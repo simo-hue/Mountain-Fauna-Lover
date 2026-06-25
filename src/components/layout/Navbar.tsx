@@ -34,11 +34,10 @@ export function Navbar() {
       <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6">
         <nav
           aria-label={t("label")}
-          className="mx-auto flex max-w-[94rem] items-center justify-between rounded-full border border-white/10 bg-black/45 px-4 py-2.5 shadow-2xl shadow-black/30 backdrop-blur-xl sm:px-5"
+          className="mx-auto flex max-w-[94rem] items-center justify-between rounded-full border border-white/10 bg-alpine-black/80 px-4 py-2.5 shadow-2xl shadow-black/30 sm:px-5"
         >
           <Link
             href="/"
-            prefetch={false}
             className="focus-ring flex items-center gap-3 rounded-full -my-2.5"
             aria-label="Mountain Fauna Lover"
           >
@@ -53,7 +52,6 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                prefetch={false}
                 className={cn(
                   "focus-ring rounded-md text-[0.64rem] font-medium tracking-[0.17em] text-white/58 uppercase transition hover:text-white",
                   pathname === item.href && "text-white",
@@ -109,7 +107,6 @@ export function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    prefetch={false}
                     className="focus-ring flex items-center justify-between py-5 text-2xl font-light tracking-tight text-white sm:text-4xl"
                   >
                     {t(item.labelKey)}

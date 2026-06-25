@@ -16,8 +16,12 @@ export function ObservationLens() {
   const y = useMotionValue(0);
   const springX = useSpring(x, { stiffness: 180, damping: 28 });
   const springY = useSpring(y, { stiffness: 180, damping: 28 });
-  const backgroundX = useTransform(springX, (value) => `${-value + 132}px`);
-  const backgroundY = useTransform(springY, (value) => `${-value + 132}px`);
+  // The lens reveals the alpine scene aligned to the viewport. Previously this
+  // was driven by animating background-position, which forces a CPU repaint of
+  // the filtered lens every frame. Instead we move an inner background layer by
+  // the same offset with a GPU transform — visually identical, but composited.
+  const bgX = useTransform(springX, (value) => -value + 132);
+  const bgY = useTransform(springY, (value) => -value + 132);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -51,16 +55,15 @@ export function ObservationLens() {
       aria-hidden="true"
     >
       <m.div
-        style={{
-          x: springX,
-          y: springY,
-          backgroundPositionX: backgroundX,
-          backgroundPositionY: backgroundY,
-        }}
+        style={{ x: springX, y: springY }}
         animate={{ opacity: active ? 1 : 0.74, scale: active ? 1 : 0.92 }}
         transition={{ duration: 0.35 }}
-        className="observation-lens alpine-night-bg absolute top-0 left-0 hidden size-64 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border border-white/45 bg-[length:100vw_100vh] bg-no-repeat shadow-[0_0_0_10px_rgba(255,255,255,0.025),0_30px_100px_rgba(0,0,0,0.8)] lg:block"
+        className="observation-lens absolute top-0 left-0 hidden size-64 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border border-white/45 shadow-[0_0_0_10px_rgba(255,255,255,0.025),0_30px_100px_rgba(0,0,0,0.8)] lg:block"
       >
+        <m.div
+          style={{ x: bgX, y: bgY }}
+          className="alpine-night-bg absolute top-0 left-0 h-screen w-screen bg-[length:100vw_100vh] bg-no-repeat"
+        />
         <span className="absolute inset-3 rounded-full border border-white/20" />
         <span className="absolute top-1/2 right-0 left-0 h-px bg-white/30" />
         <span className="absolute top-0 bottom-0 left-1/2 w-px bg-white/30" />

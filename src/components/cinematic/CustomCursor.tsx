@@ -29,18 +29,32 @@ export function CustomCursor() {
     document.documentElement.classList.add("has-custom-cursor");
 
     let frame = 0;
+    let lastMode: CursorMode = "default";
+    let lastActive = false;
     const onMove = (event: MouseEvent) => {
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(() => {
         if (!cursorRef.current) return;
         cursorRef.current.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
-      });
 
-      const target = (event.target as HTMLElement).closest<HTMLElement>(
-        "[data-cursor]",
-      );
-      setMode((target?.dataset.cursor as CursorMode | undefined) ?? "default");
-      setActive(Boolean(target));
+        const target = (event.target as HTMLElement).closest<HTMLElement>(
+          "[data-cursor]",
+        );
+        const nextMode =
+          (target?.dataset.cursor as CursorMode | undefined) ?? "default";
+        const nextActive = Boolean(target);
+        // Only touch React state when the value actually changes. Plain movement
+        // over non-interactive areas then costs nothing beyond the rAF-throttled
+        // transform update above — no re-render, no DOM thrash.
+        if (nextMode !== lastMode) {
+          lastMode = nextMode;
+          setMode(nextMode);
+        }
+        if (nextActive !== lastActive) {
+          lastActive = nextActive;
+          setActive(nextActive);
+        }
+      });
     };
 
     const onLeave = () => cursorRef.current?.classList.add("cursor-hidden");
@@ -85,7 +99,7 @@ export function CustomCursor() {
             : "rgba(255,255,255,.35)",
         }}
         transition={{ type: "spring", stiffness: 420, damping: 30 }}
-        className="grid place-items-center rounded-full border bg-black/5 backdrop-blur-[1px]"
+        className="grid place-items-center rounded-full border bg-black/5"
       >
         {icon}
       </m.div>
