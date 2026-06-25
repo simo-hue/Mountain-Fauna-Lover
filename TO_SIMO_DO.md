@@ -33,20 +33,6 @@ Before production launch:
 The on-site work is done and verified (schema, FAQ, breadcrumbs, llms.txt, robots,
 sitemap, metadata, Core Web Vitals). These remaining steps need account access.
 
-### 1. Search Console (measurement backbone — do this first)
-- [ ] Create a **Google Search Console** property for `https://mountainfaunalover.vercel.app`
-      (https://search.google.com/search-console). Verify it, then submit the sitemap:
-      `https://mountainfaunalover.vercel.app/sitemap.xml`.
-- [ ] Create a **Bing Webmaster Tools** account (https://www.bing.com/webmasters) — it
-      feeds ChatGPT Search and Copilot. You can import the property from Google. Submit the
-      same sitemap.
-- [x] ~~Send me the verification codes~~ — **DONE**: both Google
-      (`google-site-verification`) and Bing (`msvalidate.01`) tags are wired into
-      `src/app/layout.tsx` and render site-wide.
-- [ ] **Remaining:** deploy to production, then click **Verify** in both Google Search
-      Console and Bing Webmaster Tools, and **submit the sitemap**
-      (`https://mountainfaunalover.vercel.app/sitemap.xml`) in each.
-
 ### 2. Social profile consistency + sameAs (biggest entity signal, cheap)
 - [ ] Use the **exact same display name** on every channel. Your YouTube channel currently
       shows **"Mountain & Fauna Lover"** (with `&`) while the brand is **"Mountain Fauna
