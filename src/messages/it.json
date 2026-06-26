@@ -541,7 +541,7 @@
         },
         {
           "q": "A che distanza osservi la fauna?",
-          "a": "Da grande distanza, con ingrandimenti fino a 60×, per non alterare mai il comportamento degli animali."
+          "a": "Da grande distanza, con ingrandimenti fino a 120×, per non alterare mai il comportamento degli animali."
         }
       ]
     },
@@ -559,7 +559,7 @@
         },
         {
           "q": "In quali zone operi?",
-          "a": "Principalmente in Val di Rabbi, nel Parco Nazionale dello Stelvio e in tutto il Trentino-Alto Adige."
+          "a": "Principalmente in Val di Rabbi, nel Parco Nazionale dello Stelvio e in tutto il Trentino-Alto Adige. Ma di certo non mi pongo delle barriere quindi sentiamoci."
         }
       ]
     },
@@ -569,7 +569,7 @@
       "items": [
         {
           "q": "Chi è Mattioli Simone?",
-          "a": "Il fondatore di Mountain Fauna Lover: osservatore della montagna, appassionato di fauna e filmmaker del Trentino-Alto Adige."
+          "a": "Osservatore della montagna, appassionato di fauna e filmmaker del Trentino-Alto Adige."
         },
         {
           "q": "Di dove è?",

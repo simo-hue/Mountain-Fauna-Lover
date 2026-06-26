@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { m } from "framer-motion";
 import { Bike, Crosshair, Play, Scan } from "lucide-react";
 
+import { AntlerMark } from "./AntlerMark";
+
 type CursorMode =
   | "default"
   | "lens"
@@ -76,7 +78,7 @@ export function CustomCursor() {
   if (!enabled) return null;
 
   const icon = {
-    default: <Crosshair className="size-3" />,
+    default: <AntlerMark className="h-8 w-11" />,
     lens: <Scan className="size-5" />,
     play: <Play className="size-4 fill-current" />,
     technical: <Crosshair className="size-5" />,
@@ -92,14 +94,18 @@ export function CustomCursor() {
     >
       <m.div
         animate={{
-          width: mode === "lens" ? 62 : active ? 42 : 26,
-          height: mode === "lens" ? 62 : active ? 42 : 26,
+          width: mode === "lens" ? 62 : active ? 42 : 30,
+          height: mode === "lens" ? 62 : active ? 42 : 30,
+          // At rest (antlers) the ring is invisible — the antlers ARE the cursor.
+          // Hovering anything interactive fades the scope ring + faint fill back
+          // in around the contextual glyph.
           borderColor: active
             ? "rgba(255,255,255,.72)"
-            : "rgba(255,255,255,.35)",
+            : "rgba(255,255,255,0)",
+          backgroundColor: active ? "rgba(0,0,0,.05)" : "rgba(0,0,0,0)",
         }}
         transition={{ type: "spring", stiffness: 420, damping: 30 }}
-        className="grid place-items-center rounded-full border bg-black/5"
+        className="grid place-items-center rounded-full border"
       >
         {icon}
       </m.div>
