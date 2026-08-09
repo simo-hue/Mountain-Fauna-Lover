@@ -58,3 +58,14 @@ sitemap, metadata, Core Web Vitals). These remaining steps need account access.
       it.
 - [ ] **Data bug to fix:** `video-01` and `video-04` both point to the same YouTube ID
       (`wQrx2422wD8`). Give me the correct ID for one of them.
+## [2026-08-08] Vercel environment variable — still worth fixing
+
+`NEXT_PUBLIC_SITE_URL` is set to `http://localhost:3000` in the Vercel **Production** environment. The code now refuses a loopback origin in production builds, so the live site will be correct on the next deploy regardless — but the variable is still wrong and should be corrected at source:
+
+Vercel → `mountain-fauna-lover` → Settings → Environment Variables → Production:
+
+```
+NEXT_PUBLIC_SITE_URL = https://mountain-fauna-lover.vercel.app
+```
+
+Then redeploy. Without this, every production build logs a warning.
