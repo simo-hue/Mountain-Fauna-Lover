@@ -92,7 +92,7 @@ export default async function LinkPage({
               {t("subtitle")}
             </h1>
             <p className="text-[0.6rem] tracking-[0.15em] uppercase text-white/40">
-              Trentino - Alto Adige
+              Simone Mattioli
             </p>
           </div>
         </div>
